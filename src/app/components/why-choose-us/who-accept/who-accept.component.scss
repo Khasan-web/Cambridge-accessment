@@ -1,0 +1,38 @@
+$v1: #710193;
+$v2: #9846b7;
+$v3: #3b0056;
+
+$m1: #a10559;
+$m2: #bc2b7e;
+$m3: #770044;
+
+$n1: #0b1171;
+$n2: #313b9b;
+$n3: #060b38;
+
+
+#who-accept{
+    a{
+        color: $v2;
+        opacity: 0.7;
+        font-weight: 500;
+    }
+    h2{
+        font-weight: 300;
+    }
+    .line{
+        height: 5px;
+        background: $v2;
+    }
+    .accept-item{
+        line-height: 100px;
+        vertical-align: middle;
+        display: block;
+        margin: 0 auto;
+        opacity: 0.7;
+        text-align: center;
+    }
+    .accept-item:hover{
+        opacity: 1;
+    }
+}

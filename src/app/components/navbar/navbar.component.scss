@@ -1,0 +1,173 @@
+$violet_1: #710193;
+$violet_2: #9846b7;
+$violet_3: #3b0056;
+
+$magenta_1: #a10559;
+$magenta_2: #bc2b7e;
+$magenta_3: #770044;
+
+$navy_1: #0b1171;
+$navy_2: #313b9b;
+$navy_3: #0b1171;
+
+
+.navbar-toggler{
+    border: 0;
+    margin: 5px;
+    border-radius: 0;
+    outline: none;
+    .fa-bars{
+        font-size: 25px;
+    }
+}
+.navbar-toggler:active{
+    border: 0;
+}
+
+
+.first-section{
+    line-height: 60px;
+    p{
+        font-weight: 700;
+        opacity: 0.5;
+    }
+    .socials{
+        i{
+            font-size: 30px;
+            margin: 0 3px;
+            opacity: 0.7;
+            vertical-align: middle;
+        }
+        a:nth-child(1){
+            color: #B92525;
+        }
+        a:nth-child(2){
+            color: #3B5998;
+        }
+        a:nth-child(3){
+            color: #1C9CEA;
+        }
+        a:nth-child(4){
+            color: rgb(187, 42, 91);
+        }
+        a:nth-child(5){
+            color: #0077B5;
+        }
+        a{
+            color: #B92525;
+        }
+        i:hover{
+            opacity: 1;
+        }
+    }
+    .lang-item{
+        width: 30px;
+        margin: 0 5px;
+        transition: 0.2s;
+        border-radius: 50%;
+        opacity: 0.6;
+    }
+    .lang-item:hover{
+        opacity: 1;
+    }
+    .active{
+        opacity: 1;
+    }
+
+}
+.second-section{
+    nav{
+        background: $violet_1;
+        .nav-item{
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 0 10px;
+            font-weight: 400;
+            padding-left: 0.5rem!important;
+            i{
+                font-size: 16px;
+                opacity: 0.9;
+                margin-right: 0.5rem;
+            }
+        }
+        .last-item{
+            border: none;
+        }
+        
+    }
+    .dropdown-menu{
+        background: #a04cb9;
+        opacity: 0.9;
+        border: none;
+        .dropdown-item{
+            color: #fff;
+            font-weight: 300;
+            transition: 0.2s;
+            opacity: 0.8;
+            padding-left: 30px;
+            background: transparent;
+        }
+        .dropdown-item:hover{
+            background: transparent;
+        }
+        .dropdown-item:hover::before{
+            content: "⚫";
+            position: absolute;
+            left: 0;
+            padding-left: 10px;
+            opacity: 0.6;
+        }
+    }
+    .dropdown:hover{
+        .dropdown-menu{
+            display: block!important;
+        }
+    }
+    .active{
+        background: #fff;
+        a{
+            color: $violet_1;
+        }
+    }
+    .card{
+        background: transparent;
+        border: none;
+        .card-body{
+            padding: 10px;
+            font-size: 14px;
+        }
+        .card-header{
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+            padding: 0;
+            padding-bottom: 5px;
+        }
+    }
+}
+.second-level{
+    color: #fff!important;
+    opacity: 0.7;
+}
+.dropdown-menu{
+    position: relative;
+}
+.close-dropdown{
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    opacity: 0.7;
+    i{
+        color: #fff;
+    }
+}
+
+
+@media(max-width: 768px){
+    .nav-link{
+        i{
+            margin: 0 10px;
+        }
+    }
+    .dropdown-item{
+        padding-left: 10px!important;
+    }
+}

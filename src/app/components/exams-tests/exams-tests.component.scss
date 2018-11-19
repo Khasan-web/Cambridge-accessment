@@ -1,0 +1,108 @@
+#exams-tests{
+
+    .overflow{
+        .overflowImg{
+            position: absolute;
+        }
+        .content{
+            z-index: 5;
+            position: relative;
+            color: #fff;
+            text-align: center;
+            padding-top: 150px;
+            p{
+                font-weight: 300;
+            }
+        }
+    }
+    .step-by-step{
+        margin-top: 450px;
+        p{
+            text-align: left;
+        }
+    }
+    h1, h2, h3{
+        font-weight: 300;
+    }
+    .parts{
+        .part-item{
+            margin-top: 45px;
+        }
+    }
+    .qualifications{
+        margin: 150px 0;
+    }
+    .levels{
+        text-align: left;
+        .lvl{
+            margin-bottom: 25px;
+            transition: 0.5s;
+        }
+        .level{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            line-height: 50px;
+            vertical-align: middle;
+            border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            h4{
+                font-weight: 700;
+                line-height: 50px;
+                vertical-align: middle;
+            }
+        }
+        .lvl:hover{
+            padding-left: 20px;
+            cursor: pointer;
+        }
+        .pre-lvl{
+            h4{
+                font-size: 20px;
+                line-height: 21px;
+            }
+            .pre{
+                font-size: 15px;
+            }
+        }
+        p{
+            display: inline;
+            padding-left: 15px;
+        }
+    }
+
+}
+
+
+@media(min-width: 998px){
+    .parts{
+        .part-item{
+            height: 270px;
+            max-height: 270px;
+            position: relative;
+            button{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                left: 50%;
+                transform: translate(-50%, 0)
+            }
+        }
+    }
+}
+
+@media(max-width: 998px){
+    .content{
+        padding-top: 75px!important;
+    }
+}
+
+@media(max-width: 610px){
+    .content{
+        padding-top: 20px!important;
+        p{
+            display: none;
+        }
+    }
+}

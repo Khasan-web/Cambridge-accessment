@@ -1,0 +1,45 @@
+<section id="who-accept">
+  <div class="container mt-5">
+    <h2 class="drop-content-item">Who accept our exams?</h2>
+    <div class="line"></div>
+    <div class="row mx-auto">
+      <div class="col-lg-3 col-cd-5 mx-auto">
+        <div class="sidebar">
+          <ul class="list-unstyled">
+            <h5>Why Choose Us?</h5>
+            <li *ngFor="let sidebarItem of sidebarItems">
+              <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-12 subItem mt-4">
+        <p>Cambridge English exams are recognised by over 20,000 universities, employers and governments around the
+          world. Our <a href="#">English language tests</a> can open doors to higher education, improve employment
+          opportunities, and
+          because they are globally recognised, can increase your choices for study or work. </p>
+        <p>Some of the leading organisations that already accept our exams include Sony, Bayer, University of Warwick,
+          Australian Government Department of Immigration and Border Protection (DIBP) and American Express.</p>
+        <div class="whoAccepted">
+          <div class="row">
+            <div class="col-lg-2 col-md-2 col-4 accept-item">
+              <img src="../../../../assets/img/why-we/accepts/partner1.png" alt="" class="w-100">
+            </div>
+            <div class="col-lg-2 col-md-2 col-4 accept-item">
+              <img src="../../../../assets/img/why-we/accepts/partner2.png" alt="" class="w-100">
+            </div>
+            <div class="col-lg-2 col-md-2 col-4 accept-item">
+              <img src="../../../../assets/img/why-we/accepts/partner3.png" alt="" class="w-100">
+            </div>
+            <div class="col-lg-2 col-md-2 col-4 accept-item">
+              <img src="../../../../assets/img/why-we/accepts/partner4.png" alt="" class="w-100">
+            </div>
+            <div class="col-lg-2 col-md-2 col-4 accept-item">
+              <img src="../../../../assets/img/why-we/accepts/partner5.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,1 +1,175 @@
+
 /* You can add global styles to this file, and also import other style files */
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+
+
+body{
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+}
+hr{
+    margin-top: 2rem!important;
+    margin-bottom: 2rem!important;
+}
+.row{
+    width: 100% !important;
+}
+footer{
+    margin-top: 200px;
+}
+.fa-phone{
+    transform: rotate(270deg)
+}
+.title{
+    font-weight: 700!important;
+}
+
+.btn-v1{
+    background-color: #710193;
+    color: #fff;
+}
+.btn-v2{
+    background-color: #9846b7;
+    color: #fff;
+}
+.btn-v3{
+    background-color: #3b0056;
+    color: #fff;
+}
+.btn-m1{
+    background-color: #a10559;
+    color: #fff;
+}
+.btn-m2{
+    background-color: #bc2b7e;
+    color: #fff;
+}
+.btn-m3{
+    background-color: #770044;
+    color: #fff;
+}
+.btn-n1{
+    background-color: #0b1171;
+    color: #fff;
+}
+.btn-n2{
+    background-color: #313b9b;
+    color: #fff;
+}
+.btn-n3{
+    background-color: #060b38;
+    color: #fff;
+}
+.btn-or{
+    background-color: #fd5427;
+    color: #fff;
+}
+.rounded{
+    border-radius: 5rem!important;
+}
+
+.text-v1{
+    color: #710193
+}
+.text-v2{
+    color: #9846b7
+}
+.text-v3{
+    color: #3b0056
+}
+.text-m1{
+    color: #a10559
+}
+.text-m2{
+    color: #bc2b7e
+}
+.text-m3{
+    color: #770044
+}
+.text-n1{
+    color: #0b1171
+}
+.text-n2{
+    color: #313b9b
+}
+.text-n3{
+    color: #060b38
+}
+.italic{
+    font-style: italic;
+}
+
+.sidebar{
+    margin-top: 25px;
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+    ul{
+        li{
+            padding: 10px;
+            padding-left: 15px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        li:hover{
+            background: rgba(204, 204, 204, 0.4);
+            padding-left: 25px;
+            border-left: 5px solid #710193;
+        }
+    }
+    h5{
+        color: #b1b1b1;
+    }
+    a{
+        color: rgb(43, 43, 43)!important;
+        text-decoration: none;
+    }
+}
+.subItem{
+    p{
+        font-size: 16px;
+        color: #6d6d6d;
+        line-height: 25px;
+    }
+}
+p{
+    line-height: 26px;
+}
+
+
+@media(max-width: 998px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .sidebar{
+        border-right: 0;
+    }
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    .dropdown-menu{
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 576px){
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+}

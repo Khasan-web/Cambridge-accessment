@@ -1,0 +1,84 @@
+$v1: #710193;
+$v2: #9846b7;
+$v3: #3b0056;
+
+$m1: #a10559;
+$m2: #bc2b7e;
+$m3: #770044;
+
+$n1: #0b1171;
+$n2: #313b9b;
+$n3: #060b38;
+
+
+#games-social-media{
+    a{
+        color: $v2;
+        opacity: 0.7;
+        font-weight: 500;
+    }
+    h2{
+        font-weight: 300;
+    }
+    .line{
+        height: 5px;
+        background: $v2;
+    }
+    .accept-item{
+        line-height: 100px;
+        vertical-align: middle;
+        display: block;
+        margin: 0 auto;
+        opacity: 0.7;
+        text-align: center;
+    }
+    .accept-item:hover{
+        opacity: 1;
+    }
+    .game{
+        ul{
+            opacity: 0.8;
+        }
+        .game-img{
+            img{
+                width: 100%;
+            }
+        }
+        .game-link{
+            transition: 0.2s;
+            opacity: 0.9;
+            img{
+                width: 80%;
+            }
+        }
+        .game-link:hover{
+            opacity: 1;
+        }
+        .info{
+            ul{
+                li{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .media{
+        margin-bottom: 35px;
+        a{
+            text-decoration: underline;
+            color: #494949;
+        }
+        .img-media{
+            text-align: center;
+            border-right: 1px solid #b1b1b1;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .img-media{
+        img{
+            width: 25px;
+        }
+    }
+}

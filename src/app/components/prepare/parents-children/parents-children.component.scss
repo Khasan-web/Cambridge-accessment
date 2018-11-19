@@ -1,0 +1,67 @@
+$v1: #710193;
+$v2: #9846b7;
+$v3: #3b0056;
+
+$m1: #a10559;
+$m2: #bc2b7e;
+$m3: #770044;
+
+$n1: #0b1171;
+$n2: #313b9b;
+$n3: #060b38;
+
+
+#parents-children{
+    a{
+        color: $v2;
+        opacity: 0.7;
+        font-weight: 500;
+    }
+    h2{
+        font-weight: 300;
+    }
+    .line{
+        height: 5px;
+        background: $v2;
+    }
+    .accept-item{
+        line-height: 100px;
+        vertical-align: middle;
+        display: block;
+        margin: 0 auto;
+        opacity: 0.7;
+        text-align: center;
+    }
+    .accept-item:hover{
+        opacity: 1;
+    }
+    .links{
+        .link-item{
+            img{
+                width: 100%;
+                margin-top: 25px;
+            }
+            .link{
+                width: 100%;
+                background: rgba(0, 0, 0, 0.637);
+                text-align: center;
+                z-index: 4;
+                opacity: 0.8;
+                height: 50px;
+                line-height: 50px;
+                vertical-align: middle;
+                margin-top: -50px;
+                transition: 0.5s;
+            }
+            a{
+                color: #fff;
+                opacity: 1;
+            }
+        }
+        .link-item:hover{
+            .link{
+                background: rgb(0, 0, 0);
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+<section id="parents-children">
+  <div class="container mt-5">
+    <h2 class="drop-content-item">Parents and children</h2>
+    <div class="line"></div>
+    <div class="row mx-auto">
+      <div class="col-lg-3 col-cd-5 mx-auto">
+        <div class="sidebar">
+          <ul class="list-unstyled">
+            <h5>Exams and tests</h5>
+            <li *ngFor="let sidebarItem of sidebarItems">
+              <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-12 subItem mt-4">
+        <p>This is a great place for children to start or continue their English language journey. We have games and
+          interactive activities for children and lots of advice and tips for parents.</p>
+        <strong>
+          <p>Children</p>
+        </strong>
+        <p>You can get started on our <a routerLink="/prepare/games-and-social-media">games</a> now – you don’t need to
+          log in and everything is completely free.</p>
+        <strong>
+          <p>Parents</p>
+        </strong>
+        <p>If you’re looking for help and advice on supporting your children to learn English, go to our <a target="_blank" routerLink="prepare/parents-and-children/information-for-parents">Information
+            for parents</a> section. Everything is completely free and created by our experts.</p>
+
+          <div class="links mt-4">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 link-item">
+                <img src="../../../../assets/img/preparing/parent-children/information-for-parents.jpg" alt="">
+                <a routerLink="/prepare/parents-and-children/information-for-parents">
+                  <div class="link">
+                    Information for parents
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 link-item">
+                  <img src="../../../../assets/img/preparing/parent-children/learning-english-games-237px.png" alt="">
+                  <a routerLink="/prepare/games-and-social-media">
+                    <div class="link">
+                      Games and social media
+                    </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 link-item">
+                  <img src="../../../../assets/img/preparing/parent-children/exams.jpg" alt="">
+                  <a routerLink="/exams-tests">
+                    <div class="link">
+                      Exams
+                    </div>
+                  </a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</section>

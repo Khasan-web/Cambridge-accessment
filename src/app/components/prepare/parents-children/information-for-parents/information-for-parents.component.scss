@@ -1,0 +1,60 @@
+$v1: #710193;
+$v2: #9846b7;
+$v3: #3b0056;
+
+$m1: #a10559;
+$m2: #bc2b7e;
+$m3: #770044;
+
+$n1: #0b1171;
+$n2: #313b9b;
+$n3: #060b38;
+
+
+#parents-info{
+    a{
+        color: $m2;
+        opacity: 0.7;
+        font-weight: 500;
+    }
+    h2{
+        font-weight: 300;
+    }
+    .line{
+        height: 5px;
+        background: $m2;
+    }
+    .accept-item{
+        line-height: 100px;
+        vertical-align: middle;
+        display: block;
+        margin: 0 auto;
+        opacity: 0.7;
+        text-align: center;
+    }
+    .accept-item:hover{
+        opacity: 1;
+    }
+    h5{
+        opacity: 0.8;
+    }
+    .more-info{
+        .more-item{
+            border-left: 5px solid $m1;
+            padding-left: 20px;
+            h5{
+                padding: 15px 0;
+                cursor: pointer;
+            }
+            p{
+                margin-bottom: 35px;
+            }
+        }
+        ul{
+            opacity: 0.8;
+            li{
+                line-height: 1.8rem;
+            }
+        }
+    }
+}

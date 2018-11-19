@@ -1,0 +1,88 @@
+$v1: #710193;
+$v2: #9846b7;
+$v3: #3b0056;
+
+$m1: #a10559;
+$m2: #bc2b7e;
+$m3: #770044;
+
+$n1: #0b1171;
+$n2: #313b9b;
+$n3: #060b38;
+
+#find-us{
+    .overflow{
+        .overflowImg{
+            position: absolute;
+        }
+        .content{
+            z-index: 5;
+            position: relative;
+            color: #fff;
+            text-align: center;
+            padding-top: 150px;
+            p{
+                font-weight: 300;
+            }
+        }
+        img{
+            opacity: 0.8;
+        }
+    }
+
+    .prepare-intro{
+        margin-top: 450px;
+    }
+    h1{
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .info{
+        .line{
+            width: 50px;
+            height: 5px;
+            background: $m2;
+            border-radius: 5rem;
+        }
+    }
+}
+
+
+@media(min-width: 998px){
+    .parts{
+        .part-item{
+            height: 270px;
+            max-height: 270px;
+            position: relative;
+            button{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                left: 50%;
+                transform: translate(-50%, 0)
+            }
+        }
+    }
+    .overflow{
+        p{
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media(max-width: 998px){
+    .content{
+        padding-top: 75px!important;
+    }
+}
+
+@media(max-width: 610px){
+    .content{
+        padding-top: 20px!important;
+        p{
+            display: none;
+        }
+    }
+}

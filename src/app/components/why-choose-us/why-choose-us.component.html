@@ -1,0 +1,97 @@
+<section id="why-we">
+  <div class="big-img">
+    <div class="main-img"></div>
+    <div class="content p-3">
+      <h2 class="mt-2 title">WHY CHOOSE US?</h2>
+      <img class="w-75 mt-3" src="../../../assets/img/logo-white.png" alt="">
+    </div>
+  </div>
+
+  <div class="weAre text-center">
+    <div class="container">
+      <h1>We are Cambridge Assessment English</h1>
+      <div class="row mt-4">
+        <div class="col-lg-3 col-md-4 mx-auto">
+          <i class="fa fa-graduation-cap text-v1"></i>
+          <p>Part of the University of Cambridge, we help millions of people learn English and prove their skills to
+            the world.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 mx-auto">
+          <i class="fa fa-users text-n1"></i>
+          <p>For us, learning English is more than just exams and grades. It’s about having the confidence to
+            communicate and access a lifetime of enriching experiences and opportunities.</p>
+        </div>
+        <div class="col-lg-3 col-md-4 mx-auto">
+          <i class="fa fa-thumbs-up text-m1"></i>
+          <p>With the right support, learning a language is an exhilarating journey. We’re there with learners, every
+            step of the way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video">
+    <div class="preview-overflow text-center" (click)="onShowVideo()" *ngIf="!showVideo">
+      <div class="content-preview">
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <h2>Who are we?</h2>
+      </div>
+    </div>
+    <video width="100%" height="675" controls autoplay *ngIf="showVideo">
+      <source src="../../../assets/img/why-we/81.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+  <div class="cambridge-eng text-center">
+    <h1>Cambridge English Qualifications</h1>
+    <div class="col-lg-3 col-md-4 mx-auto my-5">
+      <p>We provide the world’s leading range of qualifications and tests for learners and teachers of English:</p>
+      <img src="../../../assets/img/why-we/CEQ.png" alt="" class="w-100 my-4">
+    </div>
+    <div class="col-lg-5 col-md-8 mx-auto mt-4">
+      <p>Our qualifications and tests are accepted by over 20,000 organisations worldwide, and provide the English
+        language skills to communicate and succeed in the real world.</p>
+      <button class="btn btn-or rounded">More about who accept our exams</button>
+    </div>
+  </div>
+
+  <div class="help-people">
+    <h1>We can help you to learn English</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mt-5 help-item">
+          <p>Whether you’re preparing to take one of our exams, or just want to improve your English, we can help you.
+            We have free materials that you can download, and activities that can help you improve your English online.</p>
+            <button class="btn btn-v1 rounded mt-3">Check out learning English</button>
+        </div>
+        <div class="col-lg-6 col-md-12 mt-5 help-item">
+          <p>If you want to take things further, you can buy official practice materials from Cambridge University Press</p>
+          <button class="btn btn-m1 rounded mt-3">Find official practice materials</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div class="container">
+      <h1 class="text-center">A few facts and figures about us</h1>
+    <div class="row mt-5">
+      <div class="col-lg-3 col-md-4 mx-auto">
+        <p>More than <span class="text-n1">5.5 million people</span> take our qualifications and tests every year.</p>
+      </div>
+      <div class="col-lg-3 col-md-4 mx-auto">
+        <p>We have over <span class="text-m1">2,800 exam centres</span> in 130 countries.</p>
+      </div>
+      <div class="col-lg-3 col-md-4 mx-auto">
+        <p>Over <span class="text-v1">50,000 preparation centres</span> around the world prepare learners to take our exams.</p>
+      </div>
+      <div class="col-lg-3 col-md-4 mx-auto">
+        <p>We’ve been providing English language assessment <span class="text-v3">since 1913</span>.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</section>

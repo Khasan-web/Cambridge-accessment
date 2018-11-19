@@ -1,0 +1,136 @@
+$v1: #710193;
+$v2: #9846b7;
+$v3: #3b0056;
+
+$m1: #a10559;
+$m2: #bc2b7e;
+$m3: #770044;
+
+$n1: #0b1171;
+$n2: #313b9b;
+$n3: #060b38;
+
+h2, h1{
+    font-weight: 300;
+}
+
+.big-img{
+    position: relative;
+    overflow: hidden;
+    .main-img{
+        background: url(../../../assets/img/why-we/second-img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-attachment: fixed;
+        height: 650px;
+        border-bottom: 10px solid $v1;
+    }
+    .content{
+        position: absolute;
+        bottom: 25%;
+        width: 500px;
+        height: 200px;
+        background: $v1;
+        color: #fff;
+        -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 89% 50%, 100% 0);
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 89% 50%, 100% 0);
+        opacity: 0.8;
+    }
+}
+.weAre{
+    margin: 150px 0;
+    p{
+        text-align: left;
+    }
+    i{
+        font-size: 50px;
+        margin: 35px 0;
+    }
+}
+
+.preview-overflow{
+    width: 100%;
+    height: 674px;
+    background-image: linear-gradient(to right, #3b0056, #bc2b7e);
+    opacity: 0.5;
+    overflow: hidden;
+    position: relative;
+    .content-preview{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #3b005600;
+        transition: 0.5s;
+        width: 540px;
+        height: 540px;
+        border-radius: 50%;
+        i{
+            font-size: 150px;
+            color: #fff;
+            opacity: 0.8;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h2{
+            color: #fff;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.7;
+        }
+    }
+}
+.preview-overflow:hover{
+    .content-preview{
+        width: 100%;
+        height: 674px;
+        border-radius: 0;
+        background: #3b0056;
+        h2{
+            opacity: 1;
+        }
+    }
+}
+
+.cambridge-eng{
+    margin: 150px 0;
+}
+
+.help-people{
+    h1{
+        text-align: center;
+    }
+    .help-item{
+        height: 180px;
+        position: relative;
+        button{
+            position: absolute;
+            bottom: 0;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.facts{
+    margin: 150px 0;
+    span{
+        font-weight: 700;
+    }
+}
+
+@media(max-width: 998px){
+    .help-item{
+        height: auto!important;
+        button{
+            position: relative!important;
+            display: block;
+            margin-right: 0 auto;
+        }
+    }
+}
