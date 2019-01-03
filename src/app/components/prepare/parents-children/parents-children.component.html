@@ -3,12 +3,12 @@
     <h2 class="drop-content-item">Parents and children</h2>
     <div class="line"></div>
     <div class="row mx-auto">
-      <div class="col-lg-3 col-cd-5 mx-auto">
-        <div class="sidebar">
+      <div class="col-lg-3 col-cd-5 mx-auto sidebar-menu">
+        <h5 data-toggle="collapse" href="#sidebar" role="button" aria-expanded="false" aria-controls="sidebar">Prepare<i class="fa fa-list pt-2 ml-1"></i></h5>
+        <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <h5>Exams and tests</h5>
             <li *ngFor="let sidebarItem of sidebarItems">
-              <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
+              <a href="{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>
           </ul>
         </div>
@@ -24,7 +24,7 @@
         <strong>
           <p>Parents</p>
         </strong>
-        <p>If you’re looking for help and advice on supporting your children to learn English, go to our <a target="_blank" routerLink="prepare/parents-and-children/information-for-parents">Information
+        <p>If you’re looking for help and advice on supporting your children to learn English, go to our <a target="_blank" routerLink="/prepare/parents-and-children/information-for-parents">Information
             for parents</a> section. Everything is completely free and created by our experts.</p>
 
           <div class="links mt-4">

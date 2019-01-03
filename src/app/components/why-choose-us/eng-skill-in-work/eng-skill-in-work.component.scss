@@ -34,6 +34,7 @@ $n3: #060b38;
     .line{
         height: 5px;
         background: $m2;
+        border-radius: 5rem;
     }
     .accept-item{
         line-height: 100px;
@@ -95,27 +96,6 @@ $n3: #060b38;
             margin: 15px 0;
         }
     }
-    .quote-block{
-        font-style: italic;
-        position: relative;
-        .quote::before{
-            top: 0;
-            position: absolute;
-            left: -15px;
-            content: "\2018";
-            font-size: 2em;
-            font-weight: 700;
-            line-height: .75em;
-            color: #007f86;
-        }
-        .quote::after{
-            content: "\2019";
-            position: absolute;
-            font-size: 2em;
-            font-weight: 700;
-            line-height: 1em;
-            color: #007f86;
-        }
-    }
+
 
 }

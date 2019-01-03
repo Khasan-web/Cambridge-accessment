@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cefr',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CefrComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public titleService: Title) {
+    this.titleService.setTitle('CEFR | Cambridge Assessment English');
+  }
 
   ngOnInit() {
   }

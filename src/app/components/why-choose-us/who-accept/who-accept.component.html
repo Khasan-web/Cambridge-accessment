@@ -1,21 +1,23 @@
-<section id="who-accept">
+<section id="who-accept" class="why-we-section">
   <div class="container mt-5">
     <h2 class="drop-content-item">Who accept our exams?</h2>
     <div class="line"></div>
     <div class="row mx-auto">
-      <div class="col-lg-3 col-cd-5 mx-auto">
-        <div class="sidebar">
+      <div class="col-lg-3 col-cd-5 mx-auto sidebar-menu">
+        <h5 data-toggle="collapse" href="#sidebar" role="button" aria-expanded="false" aria-controls="sidebar">Why
+          Choose Us?<i class="fa fa-list pt-2 ml-1"></i></h5>
+        <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <h5>Why Choose Us?</h5>
             <li *ngFor="let sidebarItem of sidebarItems">
               <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="col-lg-9 col-md-12 subItem mt-4">
+      <div class="col-lg-9 col-md-12 subItem mt-4 content">
         <p>Cambridge English exams are recognised by over 20,000 universities, employers and governments around the
-          world. Our <a href="#">English language tests</a> can open doors to higher education, improve employment
+          world. Our <a href="/exams-tests">English language tests</a> can open doors to higher education, improve
+          employment
           opportunities, and
           because they are globally recognised, can increase your choices for study or work. </p>
         <p>Some of the leading organisations that already accept our exams include Sony, Bayer, University of Warwick,
@@ -39,6 +41,83 @@
             </div>
           </div>
         </div>
+
+        <hr>
+
+        <h4 class="mb-5">Learn about the benefits of using our exams at your organisation:</h4>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <strong>
+              <p>I am an educational institution</p>
+            </strong>
+            <p>Be confident that your applicants have the right English language skills to succeed. Use our exams to
+              increase the number of high-quality applicants to your institution. </p>
+            <button (click)="institutions()" class="btn btn-v1 btn-sm btn-hover">English
+              exams for educational institutions</button>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <strong>
+              <p>I am an employer</p>
+            </strong>
+            <p>English language skills are essential for the success of any organisation seeking to operate
+              internationally. Use our exams to support your recruitment, development and training. </p>
+            <button (click)="employers()" class="btn btn-m1 btn-sm btn-hover">English
+              exams for employers</button>
+          </div>
+        </div>
+
+        <hr>
+
+        <div id="forInstitution">
+          <h4>Why choose Cambridge English Qualifications</h4>
+          <div class="line my-4"></div>
+          <p>Cambridge English Qualifications are in-depth exams, each of which focuses on a level of the Common
+            European Framework of Reference (CEFR). By accepting Cambridge English Qualifications you can: </p>
+          <ul class="mt-4">
+            <li>
+              <strong>
+                Be confident that applicants have the right English skills to succeed
+              </strong>
+            </li>
+            <p>Choose exams for your admission requirements that are set at the right level for academic success.
+              Cambridge English exams test all language skills – reading, writing, listening and speaking – with
+              speaking tested face-to-face.</p>
+            <li>
+              <strong>
+                Increase the number of high-quality applicants to your institution
+              </strong>
+            </li>
+            <p>Accept our exams as part of your admissions criteria and you will be able to select from thousands of
+              high-calibre candidates from around the world.</p>
+            <li>
+              <strong>
+                Diversify your international student population
+              </strong>
+            </li>
+            <p>Improve your institution’s profile internationally and attract candidates from beyond your usual range
+              of countries.</p>
+          </ul>
+          <br>
+          <a class="text-dark" target="_blank" href="../../../../assets/media/24935-exams-for-higher-education-guide.pdf"><img
+              src="../../../../assets/img/download.png" alt=""> Guide to Cambridge English Qualifications for higher
+            education</a>
+        </div>
+
+        <div id="forEmployer">
+          <h4>Why choose Cambridge En qw qwglish Qualifications</h4>
+          <div class="line my-4" style="background: #bc2b7e; width: 50px;"></div>
+          <p>English language skills are essential for the success of any organisation seeking to operate
+            internationally. Many leading organisations around the world find Cambridge English exams to be an
+            effective way to assess business language skills. </p>
+          <p>Cambridge English exams can support recruitment, development and training. Use them to help your
+            organisation: </p>
+          <ul>
+            <li>source and recruit candidates with the <strong>English skills to support your organisations’s success</strong>.</li>
+            <li>ensure your workforce’s English meets <strong>international standards</strong></li>
+            <li>raise its <strong>international profile</strong>.</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </div>

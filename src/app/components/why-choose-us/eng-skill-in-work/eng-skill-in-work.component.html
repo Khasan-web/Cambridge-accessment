@@ -1,12 +1,13 @@
-<section id="eng-skills">
+<section id="eng-skills" class="why-we-section">
   <div class="container mt-5">
     <h2 class="drop-content-item">English language skills in the workplace</h2>
     <div class="line"></div>
     <div class="row mx-auto">
-      <div class="col-lg-3 col-cd-5 mx-auto">
-        <div class="sidebar">
+      <div class="col-lg-3 col-cd-5 mx-auto sidebar-menu">
+        <h5 data-toggle="collapse" href="#sidebar" role="button" aria-expanded="false" aria-controls="sidebar">Why
+          Choose Us?<i class="fa fa-list pt-2 ml-1"></i></h5>
+        <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <h5>Why Choose Us?</h5>
             <li *ngFor="let sidebarItem of sidebarItems">
               <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>

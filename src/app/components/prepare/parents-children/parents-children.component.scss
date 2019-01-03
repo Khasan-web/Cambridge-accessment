@@ -12,8 +12,13 @@ $n3: #060b38;
 
 
 #parents-children{
+    .sidebar{
+        li:hover{
+            border-left: 5px solid $m2;
+        }
+    }
     a{
-        color: $v2;
+        color: $m2;
         opacity: 0.7;
         font-weight: 500;
     }
@@ -22,7 +27,8 @@ $n3: #060b38;
     }
     .line{
         height: 5px;
-        background: $v2;
+        background: $m2;
+        border-radius: 5rem;
     }
     .accept-item{
         line-height: 100px;

@@ -1,17 +1,21 @@
 
 /* You can add global styles to this file, and also import other style files */
-@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
 
 
 body{
-    background-color: #e5e5e5;
-    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 hr{
     margin-top: 2rem!important;
     margin-bottom: 2rem!important;
+}
+.text-a{
+    color: #5E6063!important;
 }
 .row{
     width: 100% !important;
@@ -25,7 +29,9 @@ footer{
 .title{
     font-weight: 700!important;
 }
-
+.carousel-inner{
+    overflow: visible!important;
+}
 .btn-v1{
     background-color: #710193;
     color: #fff;
@@ -69,6 +75,16 @@ footer{
 .rounded{
     border-radius: 5rem!important;
 }
+.btn-hover{
+    opacity: 0.7!important;
+    transition: 0.3s;
+}
+.btn-hover:hover{
+    opacity: 1!important;
+}
+.btn-nbr{
+    border-radius: 0!important;
+}
 
 .text-v1{
     color: #710193
@@ -100,32 +116,86 @@ footer{
 .italic{
     font-style: italic;
 }
-
-.sidebar{
-    margin-top: 25px;
-    border-right: 1px solid #ccc;
-    padding-right: 15px;
-    ul{
-        li{
-            padding: 10px;
-            padding-left: 15px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        li:hover{
-            background: rgba(204, 204, 204, 0.4);
-            padding-left: 25px;
-            border-left: 5px solid #710193;
-        }
+.short-line{
+    width: 50px;
+    height: 5px;
+    border-radius: 5rem;
+}
+.line{
+    height: 5px;
+    border-radius: 5rem;
+}
+.quote-block{
+    font-style: italic;
+    position: relative;
+    .quote::before{
+        top: 0;
+        position: absolute;
+        left: -15px;
+        content: "\2018";
+        font-size: 2em;
+        font-weight: 700;
+        line-height: .75em;
+        color: #007f86;
     }
-    h5{
-        color: #b1b1b1;
-    }
-    a{
-        color: rgb(43, 43, 43)!important;
-        text-decoration: none;
+    .quote::after{
+        content: "\2019";
+        position: absolute;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1em;
+        color: #007f86;
     }
 }
+#level{
+    margin-top: 100px;
+    .title{
+        line-height: 50px;
+        vertical-align: middle;
+    }
+}
+
+.sidebar-menu{
+    h5{
+        color: #b1b1b1;
+        margin-top: 15px;
+        cursor: pointer;
+        i{
+            transition: 0.2s;
+            padding-left: 5px;
+        }
+    }
+    h5:hover{
+        i{
+            color: #710193bb;
+        }
+    }
+    .sidebar{
+        margin-top: 25px;
+        padding-right: 15px;
+        ul{
+            li{
+                padding-left: 15px;
+                cursor: pointer;
+                transition: 0.2s;
+                a{
+                    padding: 10px;
+                    display: block;
+                }
+            }
+            li:hover{
+                background: rgba(204, 204, 204, 0.4);
+                padding-left: 25px;
+                border-left: 5px solid #9846b7;
+            }
+        }
+        a{
+            color: rgb(43, 43, 43)!important;
+            text-decoration: none;
+        }
+    }
+}
+
 .subItem{
     p{
         font-size: 16px;
@@ -136,7 +206,95 @@ footer{
 p{
     line-height: 26px;
 }
+.unselectable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.row{
+    margin-left: 0!important;
+}
+#results{
+    ul{
+        li{
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+    }
+    img{
+        transition: 0.2s;
+    }
+    img:hover{
+        transform: scale(1.5);
+    }
+}
+table{
+    th{
+        padding-left: 15px;
+    }
+}
 
+.text-a{
+    background-image: url(assets/img/download.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.zip{
+    background-image: url(assets/img/downloadZip.png)!important;
+}
+
+.btn-links {
+    a {
+        margin: 0;
+    }
+}
+
+.sm {
+    width: 33%;
+}
+.sm-table-mark {
+    width: 150px;
+}
+
+.info-title {
+    margin-bottom: 15px;
+}
+
+.why-we-section, #parents-children, #games-social-media, #cefr, #book-test, #parents-info, #terms {
+    margin-top: 100px;
+}
+
+table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+@media(min-width: 998px){
+    .sidebar-menu{
+        .sidebar{
+            border-right: 1px solid #ccc;
+            height: 500px;
+            a{
+                color: #5E6063!important;
+            }
+        }
+        h5 {
+            i {
+                display: none;
+            }
+        }
+        .collapse{
+            display: block;
+        }
+    }    
+}
 
 @media(max-width: 998px){
     h1{
@@ -151,6 +309,15 @@ p{
     .sidebar{
         border-right: 0;
     }
+    .btn-links{
+        text-align: left!important;
+    }
+    .subItem {
+        padding: 0;
+    }
+    table {
+        width: 500px!important;
+    }
 }
 
 @media(max-width: 768px){
@@ -162,6 +329,9 @@ p{
     }
     .dropdown-menu{
         margin: 15px 0;
+    }
+    p, td{
+        font-size: 15px!important;
     }
 }
 

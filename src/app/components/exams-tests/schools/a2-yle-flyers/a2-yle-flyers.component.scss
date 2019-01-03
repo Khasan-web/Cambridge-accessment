@@ -1,0 +1,155 @@
+$v1: #710193;
+$v2: #9846b7;
+$v3: #3b0056;
+
+$m1: #a10559;
+$m2: #bc2b7e;
+$m3: #770044;
+
+$n1: #0b1171;
+$n2: #313b9b;
+$n3: #060b38;
+
+
+#level{
+    a{
+        color: $v2;
+        font-weight: 500;
+        opacity: 0.7;
+    }
+    h2{
+        font-weight: 300;
+    }
+    .line{
+        background: $v2;
+    }
+    .title-icon{
+        text-align: center;
+        i{
+            font-size: 50px;
+            color: $v2;
+            opacity: 0.7;
+        }
+    }
+    h4{
+        opacity: 0.8;
+    }
+    .mb-li{
+        li{
+            opacity: 0.7;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+    }
+    #preparation{
+        display: none;
+        .prep-item{
+            img{
+                width: 100%;
+            }
+            .prep-img{
+                z-index: 5;
+            }
+            h5{
+                font-weight: 700;
+                opacity: 0.8;
+            }
+            .buy-book{
+                position: relative;
+                top: -40px;
+                z-index: 1;
+                opacity: 0;
+                transition: 0.2s;
+                cursor: pointer;
+            }
+            a{
+                opacity: 1!important;
+            }
+        }
+        .prep-item:hover{
+            .buy-book{
+                top: 0px;
+                opacity: 1;
+            }
+        }
+        ul{
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    #testFormat{
+        transition: 0.5s;
+    }
+    #test-format{
+        display: none;
+        table{
+            th{
+                padding: 0.5rem;
+                font-weight: 500;
+            }
+            td{
+                color: #5E6063;
+            }
+        }
+        .menu{
+            .menu-item{
+                background: $v2;
+                text-align: center;
+                border-right: 2px solid #e5e5e5;
+                line-height: 15px;
+                vertical-align: middle;
+                padding: 10px;
+                cursor: pointer;
+                position: relative;
+                p{
+                    color: #fff;
+                    margin: 0;
+                    opacity: 0.7;
+                    transition: 0.2s;
+                }
+            }
+            .menu-item:hover{
+                p{
+                    opacity: 0.9;
+                }
+            }
+            .active-menu:before{
+                content: "";
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                background: $v2;
+                left: 50%;
+                transform: translate(-50%, 0) rotate(45deg);
+            }
+            h5{
+                opacity: 0.9;
+            }
+            .info-title{
+                p{
+                    font-weight: 600;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    #test-dates{
+        display: none;
+    }
+    #results{
+        display: none;
+    }
+    #reading_writing, #speaking{
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 768px){
+    .info-title{
+        margin-top: 15px;
+    }
+}

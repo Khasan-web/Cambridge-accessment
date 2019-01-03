@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-general-higher-edu',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneralHigherEduComponent implements OnInit {
 
-  constructor() { }
+  constructor(public titleService: Title) {
+    this.titleService.setTitle('General and higher education | Cambridge Assessment English');
+  }
 
-  ngOnInit() {
+  ngOnInit(){
+    $('a').click(function(){
+      $(window).scrollTop(0);
+    })
   }
 
 }

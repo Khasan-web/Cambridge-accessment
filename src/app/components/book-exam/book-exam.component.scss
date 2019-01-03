@@ -1,0 +1,97 @@
+$v1: #710193;
+$v2: #9846b7;
+$v3: #3b0056;
+
+$m1: #a10559;
+$m2: #bc2b7e;
+$m3: #770044;
+
+$n1: #0b1171;
+$n2: #313b9b;
+$n3: #060b38;
+
+h2 {
+  font-weight: 300;
+}
+
+.accept-item {
+  line-height: 100px;
+  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.short-line {
+  background: $v1;
+  margin: 0 auto;
+}
+
+.accept-item:hover {
+  opacity: 1;
+}
+
+h4 {
+  opacity: 0.8;
+}
+
+.content {
+  ul {
+    li {
+      opacity: 0.7;
+    }
+  }
+}
+
+#forInstitution,
+#forEmployer {
+  display: none;
+}
+
+.title-cefr {
+  color: rgb(100, 100, 100);
+  font-weight: 300;
+  text-align: center;
+}
+
+.conten-body {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.important-item {
+  text-align: center;
+  margin-bottom: 30px;
+
+  p {
+    text-align: left;
+  }
+
+  i {
+    color: $v1;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+.input-group-text {
+  border-radius: 5px 0 0 5px;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px) {
+  .conten-body {
+    width: auto;
+  }
+  .mail::before {
+      display: none;
+  }
+  .input-group {
+    margin-bottom: 25px;
+  }
+}

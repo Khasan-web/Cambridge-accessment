@@ -25,6 +25,7 @@ $n3: #060b38;
         color: $n2;
         opacity: 0.7;
         font-weight: 500;
+        text-decoration: none;
     }
     h2{
         font-weight: 300;
@@ -32,6 +33,7 @@ $n3: #060b38;
     .line{
         height: 5px;
         background: $n2;
+        border-radius: 5rem;
     }
     .accept-item{
         line-height: 100px;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-footer',
@@ -9,7 +10,16 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(){
+    $('a').click(function(){
+      $(window).scrollTop(0);
+    });
+
+    $('.scroll-top').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+
   }
 
 }

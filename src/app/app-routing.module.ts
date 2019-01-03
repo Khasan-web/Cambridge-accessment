@@ -25,18 +25,23 @@ import { GamesSocialMediaComponent } from './components/prepare/games-social-med
 import { ParentsChildrenComponent } from './components/prepare/parents-children/parents-children.component';
 import { InformationForParentsComponent } from './components/prepare/parents-children/information-for-parents/information-for-parents.component';
 import { CefrComponent } from './components/exams-tests/cefr/cefr.component';
+import { TermsConditionsComponent } from './components/terms-conditions/terms-conditions.component';
 import { FindUsComponent } from './components/find-us/find-us.component';
+import { BookExamComponent } from './components/book-exam/book-exam.component';
+
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'book-exam', component: BookExamComponent },
   { path: 'exams-tests', component:  ExamsTestsComponent},
     { path: 'exams-tests/cefr', component:  CefrComponent},
-  { path: 'general-higher', component: GeneralHigherEduComponent},
+  { path: 'exams-tests/general-higher', component: GeneralHigherEduComponent},
     { path: 'exams-tests/general-higher/key', component: A2KetComponent },
     { path: 'exams-tests/general-higher/preliminary', component: B1PetComponent },
     { path: 'exams-tests/general-higher/first', component: B2FceComponent },
     { path: 'exams-tests/general-higher/advanced', component: C1CaeComponent },
-  { path: 'schools', component: SchoolsComponent },
+  { path: 'exams-tests/schools', component: SchoolsComponent },
     { path: 'exams-tests/schools/starters', component: PreA1YleStartersComponent },
     { path: 'exams-tests/schools/movers', component:  A1YleMoversComponent},
     { path: 'exams-tests/schools/flyers', component:  A2YleFlyersComponent},
@@ -52,8 +57,9 @@ const routes: Routes = [
   { path: 'why-we/end-skill-in-workplace', component: EngSkillInWorkComponent },
   { path: 'why-we/study-abroad', component: StudyAbroadComponent },
   { path: 'who-accept', component: WhoAcceptComponent },
+  { path: 'terms-conditions', component: TermsConditionsComponent },
   { path: 'find-us', component: FindUsComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: '**', component: NotFoundComponent },
 ]
 
 @NgModule({

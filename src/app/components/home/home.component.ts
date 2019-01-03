@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +9,11 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public titleService: Title) {
+    this.titleService.setTitle('Home | Cambridge Assessment English');
+  }
 
   ngOnInit() {
-
-    $(document).ready(function(){
-      $('.your-class').slick({
-        
-      });
-    });
 
   }
   

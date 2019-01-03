@@ -1,3 +1,767 @@
-<p>
-  a1-yle-movers works!
-</p>
+<section id="level">
+  <div class="container mt-5">
+    <div class="row mb-2 title">
+      <div class="col-lg-6 col-md-12 col-12">
+        <h2 class="drop-content-item d-inline-block">A1 Movers
+          <a class="mx-2" routerLink="/book-exam">
+            <button class="btn btn-v2 btn-sm">Book a test!</button>
+          </a>
+        </h2>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 text-right p-0 btn-links">
+        <a class="mx-1" id="commonInfo"><button class="btn btn-m2 btn-sm">Common info</button></a>
+        <a class="mx-1" id="testFormat"><button class="btn btn-m2 btn-sm">Test format</button></a>
+        <a class="mx-1" id="preparationBtn"><button class="btn btn-m2 btn-sm">Preparation</button></a>
+        <a class="mx-1" id="testDates"><button class="btn btn-m2 btn-sm">Test dates</button></a>
+        <a class="mx-1" id="resultBtn"><button class="btn btn-m2 btn-sm">Results</button></a>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="row mx-auto">
+      <div class="col-lg-3 col-cd-5 mx-auto sidebar-menu">
+        <h5 data-toggle="collapse" href="#sidebar" role="button" aria-expanded="false" aria-controls="sidebar">Schools
+          levels <i class="fa fa-list pt-2"></i></h5>
+        <div class="sidebar collapse" id="sidebar">
+          <ul class="list-unstyled">
+            <li *ngFor="let sidebarItem of sidebarItems">
+              <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-12 subItem mt-4">
+
+        <section id="main-info" class="navigation-level">
+          <div class="row">
+            <div class="col-lg-1 col-md-1 col-2 title-icon p-0">
+              <i class="fa fa-book" aria-hidden="true"></i>
+            </div>
+            <div class="col-10">
+              <p>A1 Movers, formerly known as Cambridge English: Movers (YLE Movers), is one of our <a href="/exams-tests/qualifications">Cambridge
+                  English
+                  Qualifications</a>. It is the next step in a child’s English language learning. </p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <p>A1 Movers is the second of three <a href="/exams-tests">Cambridge English Qualifications designed
+                  for young learners</a>. These
+                tests introduce children to everyday written and spoken English and are an excellent way for them to
+                gain
+                confidence and improve their English.</p>
+              <p>The tests are written around familiar topics and focus on the skills needed to communicate effectively
+                in English through listening, speaking, reading and writing.</p>
+
+              <hr>
+
+              <a target="_blank" href="https://www.cambridgeenglish.org/Images/153312-yle-information-for-candidates.pdf"
+                class="text-a"> Information for candidates
+                and parents</a> <br><br>
+              <a target="_blank" href="https://www.cambridgeenglish.org/Images/467356-a1-movers-faqs.pdf" class="text-a">
+                Download the A1 Movers FAQs</a>
+            </div>
+
+            <div class="col-lg-6 col-md-6 pl-4 mt-5">
+              <h4>Key facts</h4>
+              <div class="short-line btn-v2 my-3"></div>
+              <p><strong>CEFR level:</strong> A1 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
+              <p><strong>Test format:</strong> Paper-based</p>
+              <p><strong>No. of papers:</strong> 3</p>
+              <p><strong>Test length:</strong> About 1 hour</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <strong>
+                <p>A1 Movers can help your child:</p>
+              </strong>
+              <div class="short-line btn-v2 my-3"></div>
+              <ul class="mb-li">
+                <li><strong>understand basic instructions or take part in simple conversations</strong></li>
+                <li><strong>understand basic notices, instructions or information</strong></li>
+                <li><strong>complete basic forms and write notes, including times, dates and places.</strong></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <strong>
+                <p>Reasons to choose A1 Movers:</p>
+              </strong>
+              <div class="short-line btn-v2 my-3"></div>
+              <ul class="mb-li">
+                <li><strong>There’s no pass or fail – every child gets a Cambridge English certificate which celebrates
+                    their achievements.</strong></li>
+                <li><strong>The test uses realistic everyday situations to bring learning to life.</strong></li>
+                <li><strong>The test covers all major varieties of English (e.g. British English, American English).</strong></li>
+                <li><strong>We have a huge range of free and paid-for support.</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="quote-block">
+            <p class="quote">The introduction of Cambridge English: Young Learners has changed the traditional way of
+              teaching a language. It has become more interesting...</p>
+            <p class="mb-0"><strong>Savita Travis </strong></p>
+            <p>Chennai Public School, India </p>
+          </div>
+
+        </section>
+
+        <section id="test-format" class="navigation-level">
+          <h2>Test format</h2>
+          <p>A1 Movers is made up of three papers developed to encourage and motivate young learners. You can see
+            exactly what’s in each paper below. </p>
+            <div class="teble-responsive">
+              <table class="table my-5">
+                <thead class="btn-v2">
+                  <tr>
+                    <th scope="col">Paper</th>
+                    <th scope="col">Content</th>
+                    <th scope="col">Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Listening </strong> <br> about 25 minutes </td>
+                    <td><strong>5</strong> parts / <strong>25</strong> questions </td>
+                    <td>a maximum of five shields </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Reading and Writing </strong> <br> 30 minutes </td>
+                    <td><strong>6</strong> parts / <strong>35</strong> questions </td>
+                    <td>a maximum of five shields </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Speaking </strong> <br> 5–7 minutes </td>
+                    <td><strong>4</strong> parts</td>
+                    <td>a maximum of five shields </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          <br>
+          <p>Linked to the CEFR, Can Do statements show what a learner can do at each level. Read the
+            <a href="https://www.cambridgeenglish.org/Images/461492-young-learners-can-do-statements-.pdf" class="text-a">
+
+              Can Do statements for Starters, Movers and Flyers
+            </a>
+          </p>
+
+          <hr>
+
+          <div class="modules">
+            <div class="menu">
+              <div class="row">
+                <div id="listening_btn" class="col-4 menu-item active-menu">
+                  <p><i class="fa fa-music" aria-hidden="true"></i><span class="menu-title"> Listening</span></p>
+                </div>
+                <div id="read_write_btn" class="col-4 menu-item">
+                  <p>
+                    <i class="fa fa-book" aria-hidden="true"></i><span class="menu-title"> Reading</span>
+                    <span class="mx-3">|</span>
+                    <i class="fa fa-pencil" aria-hidden="true"></i><span class="menu-title"> Writing</span>
+                  </p>
+                </div>
+                <div id="speaking_btn" class="col-4 menu-item">
+                  <p><i class="fa fa-microphone" aria-hidden="true"></i><span class="menu-title"> Speaking</span></p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-12 module" id="listening">
+                  <h4><i class="fa fa-music mr-2" aria-hidden="true"></i> What’s in the Listening paper?</h4>
+                  <p>The A1 Movers Listening test has five parts. Each part begins with one or two examples. Children
+                    will hear each recording twice. </p>
+                  <br>
+                  <h5>Summary</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Time allowed:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>About 25 minutes</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of parts:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of questions:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>25</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Marks:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>a maximum of five shields </p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 1</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 1?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A big picture which shows people doing different things. Above and below the picture, there
+                        are some names. Children have to listen carefully to a conversation between an adult and a
+                        child and draw a line from each name to the correct person on the big picture. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening for names and descriptions. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 2</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 2?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A short conversation between a child and an adult, and some questions. Children listen to the
+                        recording and write the correct answer (a name or a number) after each question. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening for numbers and spelling.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 3</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 3?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Two sets of pictures. On the left, there are some pictures of people and their names, or other
+                        named places or objects. On the right, there is a set of pictures with letters but no words.
+                        Children have to listen to a conversation between two people and match each of the pictures on
+                        the right to one of the named pictures on the left. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening for words, names and detailed information. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 4</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 4?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Five short conversations between different pairs of people. For each conversation there is a
+                        question and three pictures. Children need to listen carefully to each conversation and choose
+                        the right answer (A, B or C). </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening for specific information.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 5</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 5?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A big picture which has seven examples of the same object (for example, seven balls or seven
+                        books). Children need to listen carefully to a conversation between an adult and a child, and
+                        colour each object using the colour they say in the conversation. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening for words, colours and prepositions. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-12 module" id="reading_writing">
+                  <h4><i class="fa fa-book" aria-hidden="true"></i> What’s in the Reading and Writing paper? <i class="fa fa-pencil"
+                      aria-hidden="true"></i></h4>
+                  <p>The A1 Movers Reading and Writing test has six parts. Each part begins with one or two examples.
+                    For all parts of the Reading and Writing test, children must spell their answers correctly. </p>
+                  <br>
+                  <h5>Summary</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Time allowed:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>30 minutes</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of parts:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>6</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of questions:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>35</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Marks:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>a maximum of five shields </p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 1</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 1?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>On the left, there are eight pictures of things with the English word under them. On the
+                        right, there are five definitions (sentences that describe or explain five of the eight things
+                        on the left). Children need to choose which picture matches each definition and copy the
+                        correct word under it.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading short definitions and matching to words. Writing words.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 2</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 2?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A short conversation between two people. Children have to decide what the second speaker says
+                        each time (A, B or C).</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading a conversation. Choosing the correct responses.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>6</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 3</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 3?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A text with some missing words (gaps) in it. Next to the text there are some small pictures
+                        and words. Children have to decide which word goes in each gap and copy it. For the last
+                        question, they have to choose the best title for the text from a choice of three possible
+                        titles.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading for specific information and gist (the main idea of a text). Copying words.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>6</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 4</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 4?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A text with some missing words (gaps). Next to the line where each word is missing, there is a
+                        choice of three possible answers. Children have to decide which answer is correct and copy the
+                        word into the gap.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading and understanding a factual text. Simple grammar. Copying words.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 5</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 5?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A story in three parts. Each part of the story has a picture. After each part of the story,
+                        children have to complete sentences about the story using one, two or three words.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading a story. Completing sentences.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>7</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 6</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 6?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A picture with sentence prompts. Children have to complete sentences, respond to questions and
+                        write in full sentences about the picture. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Completing sentences, responding to questions and writing sentences about a picture.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-12 module" id="speaking">
+                  <h4><i class="fa fa-microphone" aria-hidden="true"></i> What’s in the Speaking paper?</h4>
+                  <p>The A1 Movers Speaking test has four parts. Children take the test alone with the examiner, but
+                    someone they know who speaks their language (like their teacher) will introduce them to the
+                    examiner and explain what to do in their own language. </p>
+                  <br>
+                  <h5>Summary</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Time allowed:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5–7 minutes</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of parts:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>4</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Marks:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>a maximum of five shields </p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 1</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 1?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>The examiner will greet the child and ask their name and age. Then they look at two pictures.
+                        The pictures are similar but they have some differences. The examiner asks the child to
+                        describe four differences in the pictures. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Describing differences between pictures. Talking about colour, size, number, position, how
+                        people/things look, what people are doing, etc.</p>
+                    </div>
+                  </div>
+
+
+                  <hr>
+
+                  <h5>Part 2</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 2?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>The examiner shows four pictures which tell a story and tells the child about the first
+                        picture. The child has to continue the story and describe the other three pictures. The title
+                        of the story and the name(s) of the main character(s) are provided. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Understanding the beginning of a story and then continuing it. Describing pictures.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 3</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 3?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>The examiner shows the child four sets of four pictures. In each set of pictures, one picture
+                        is different from the others. The child has to say which picture is different and explain why.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Suggesting a picture which is different and explaining why.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 4</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 4?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>The examiner asks the child some questions about him/herself (for example, school, weekends,
+                        friends and hobbies).</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What should children practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Understanding and responding to personal questions.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="preparation" class="navigation-level">
+          <h2>Preparation from 2018</h2>
+          <p>Free: Paper-based sample test</p>
+          <a href="https://www.cambridgeenglish.org/Images/young-learners-sample-papers-2018-vol1.pdf" class="text-a">
+            Download the Pre A1 Starters, A1 Movers and A2 Flyers 2018 Sample papers – Vol 1
+          </a>
+          <p class="mt-3">You can download the Listening sample tests from the introduction page of the sample papers.</p>
+
+          <hr>
+
+          <h4>Handbook</h4>
+          <a target="_blank" href="https://www.cambridgeenglish.org/Images/357180-starters-movers-and-flyers-handbook-for-teachers-2018.pdf"
+            class="text-a">
+
+            Download the Starters, Movers and Flyers 2018 handbook for teachers
+          </a>
+
+          <hr>
+
+          <h4>Word List and Word List Picture Book</h4>
+          <p>The colourful A1 Movers Word List Picture Book has many of the words children have to learn for the A1 Movers test. </p>
+
+          <a target="_blank" href="https://www.cambridgeenglish.org/Images/351850-a1-movers-word-list-2018.pdf" class="text-a">
+            Download the A1 Movers Wordlist Picture book
+          </a>
+          <br>
+          <a target="_blank" href="https://www.cambridgeenglish.org/Images/506166-starters-movers-flyers-word-list-2018.pdf"
+            class="text-a">
+            Download the Pre A1 Starters, A1 Movers, A2 Flyers Wordlists
+          </a>
+
+          <hr>
+
+          <p>The A1 Movers classroom activities book will help children get better at English and learn new words.  </p>
+
+          <a target="_blank" href="https://www.cambridgeenglish.org/Images/476679-cambridge-english-a1-movers-classroom-activities.pdf"
+            class="text-a">
+            Download the A1 Movers classroom activities book
+          </a>
+
+          <hr>
+
+          <p>The A2 Flyers progress charts for students and teachers will help motivate learners. </p>
+
+          <a class="text-a zip" href="../../../../../assets/media/476683-a1-movers-progress-charts.zip">Download the A1 Movers progress charts</a>
+
+          <hr>
+
+          <h4>Speaking test videos with examiners' commentary</h4>
+          <p>These videos will help your students understand what happens during a speaking test. You can also download
+            examiner comments for each video.</p>
+          <h1>Video PART!</h1>
+
+          <hr>
+
+          <h4>Official Cambridge English preparation materials</h4>
+          <div class="row preparation mt-5">
+
+            <div class="col-lg-10 col-md-10 prep-item mb-4 p-0" *ngFor="let material of materials">
+              <div class="row">
+                <div class="col-3 p-0">
+                  <div class="prep-img">
+                    <img src="{{material.img}}" alt="">
+                  </div>
+                  <a target="_blank" href="{{material.link}}">
+                    <button class="btn btn-dark btn-nbr buy-book w-100">Buy book</button>
+                  </a>
+                </div>
+                <div class="col-9">
+                  <h5>{{material.name}}</h5>
+                  <p>{{material.info}}</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <h3>More learning resources</h3>
+          <p>You can also find a wealth of preparation tips and support materials for the revised tests on the <a href="https://worldoffun.cambridge.org/">World
+              of Fun</a> website. Resources include:</p>
+          <ul>
+            <li>Preparation materials</li>
+            <li>Teaching resources</li>
+            <li>Writing booklets</li>
+            <li>Teaching tips videos and activity packs</li>
+          </ul>
+          <h1>Video</h1>
+        </section>
+
+        <section id="test-dates" class="navigation-level">
+          <h2>Test Dates</h2>
+          <p>Different centres may offer different dates depending on the local needs and conditions. To find out when
+            children can take their A1 Movers test, contact your centre.</p>
+          <p>Children take all their test papers within a period of five days. The Listening paper is always taken
+            before the Reading and Writing paper.</p>
+        </section>
+
+        <section id="results" class="navigation-level">
+          <h2>Results</h2>
+          <p>There is no pass or fail. <strong>All children receive an award</strong> which shows how many shields they
+            have received. The maximum score is five shields for each part of the test.</p>
+          <p>An A1 Movers award is a great way to:</p>
+          <ul>
+            <li>celebrate children’s achievement</li>
+            <li>build their confidence</li>
+            <li>reward their own individual ability.</li>
+          </ul>
+          <p>A result of one shield means a child can improve a lot in that skill. Five shields mean that a child did
+            very well in that skill and answered most questions correctly.</p>
+          <p>Children should be ready to start preparing for the next Cambridge English exam – <a href="/exams-tests/schools/flyers">A2
+              Flyers</a> or <a href="/exams-tests/schools/key-for-schools">A2 Key</a> for
+            Schools – if they achieve a total of 10 or 11 shields, or above.</p>
+          <div class="col-lg-6 col-md-6">
+            <img src="../../../../../assets/img/exams/schools/levels/starters-movers-flyers-certificate-fan.png" class="w-100"
+              alt="">
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</section>

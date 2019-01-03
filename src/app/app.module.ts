@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -14,7 +14,6 @@ import { StudyAbroadComponent } from './components/why-choose-us/study-abroad/st
 import { ExamsTestsComponent } from './components/exams-tests/exams-tests.component';
 import { SchoolsComponent } from './components/exams-tests/schools/schools.component';
 import { GeneralHigherEduComponent } from './components/exams-tests/general-higher-edu/general-higher-edu.component';
-import { FreeActivitiesComponent } from './components/prepare/free-activities/free-activities.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { NavigationService } from './services/navigation.service';
 import { A2KetComponent } from './components/exams-tests/general-higher-edu/a2-ket/a2-ket.component';
@@ -32,6 +31,9 @@ import { ParentsChildrenComponent } from './components/prepare/parents-children/
 import { InformationForParentsComponent } from './components/prepare/parents-children/information-for-parents/information-for-parents.component';
 import { CefrComponent } from './components/exams-tests/cefr/cefr.component';
 import { FindUsComponent } from './components/find-us/find-us.component';
+import { BookExamComponent } from './components/book-exam/book-exam.component';
+import { CambridgeEngScaleComponent } from './components/cambridge-eng-scale/cambridge-eng-scale.component';
+import { TermsConditionsComponent } from './components/terms-conditions/terms-conditions.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,6 @@ import { FindUsComponent } from './components/find-us/find-us.component';
     ExamsTestsComponent,
     SchoolsComponent,
     GeneralHigherEduComponent,
-    FreeActivitiesComponent,
     NotFoundComponent,
     A2KetComponent,
     B1PetComponent,
@@ -63,7 +64,10 @@ import { FindUsComponent } from './components/find-us/find-us.component';
     ParentsChildrenComponent,
     InformationForParentsComponent,
     CefrComponent,
-    FindUsComponent
+    FindUsComponent,
+    BookExamComponent,
+    CambridgeEngScaleComponent,
+    TermsConditionsComponent
   ],
   imports: [
     BrowserModule,
@@ -72,4 +76,4 @@ import { FindUsComponent } from './components/find-us/find-us.component';
   providers: [NavigationService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule{}

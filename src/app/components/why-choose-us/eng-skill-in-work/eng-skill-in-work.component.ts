@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from '../../../services/navigation.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-eng-skill-in-work',
@@ -10,9 +11,10 @@ export class EngSkillInWorkComponent implements OnInit {
 
   sidebarItems = [];
 
-  constructor( private sidebarWhyWe: NavigationService ) { 
+  constructor( private sidebarWhyWe: NavigationService, public titleService: Title ) { 
     this.sidebarItems = sidebarWhyWe.sidebarWhyWe;
-   }
+    this.titleService.setTitle('English skills in the workplace | Cambridge Assessment English');
+    }
 
   ngOnInit() {
   }

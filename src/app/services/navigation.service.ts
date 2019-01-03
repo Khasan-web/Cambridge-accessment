@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NavigationService {
+export class NavigationService{
 
   sidebarWhyWe: {name: string, link: string}[] = [
     {
@@ -20,59 +20,75 @@ export class NavigationService {
     }
   ];
 
-  sidebarExams: {name: string}[] = [
+  sidebarExamsSchool: {name: string, link: string}[] = [
     {
-      name: 'Schools'
+      name: 'Schools',
+      link: 'exams-tests/schools'
     },
     {
-      name: 'Pre A1 Starters (YLE Starters)'
+      name: '- Pre A1 Starters',
+      link: 'exams-tests/schools/starters'
     },
     {
-      name: 'A1 Movers (YLE Movers)'
+      name: '- A1 Movers',
+      link: 'exams-tests/schools/movers'
     },
     {
-      name: 'A2 Key for Schools (KET)'
+      name: '- A2 Flyers',
+      link: 'exams-tests/schools/flyers'
     },
     {
-      name: 'B1 Preliminary for Schools (PET)'
+      name: '- A2 Key for Schools',
+      link: 'exams-tests/schools/key-for-schools'
     },
     {
-      name: 'B2 First for Schools (FCE)'
+      name: '- B1 Preliminary for Schools',
+      link: 'exams-tests/schools/preliminary-for-schools'
     },
     {
-      name: 'General higher education'
-    },
-    {
-      name: 'A2 Key (KET)'
-    },
-    {
-      name: 'B1 Preliminary (PET)'
-    },
-    {
-      name: 'B2 First (FCE)'
-    },
-    {
-      name: 'C1 Advanced (CAE)'
+      name: '- B2 First for Schools',
+      link: 'exams-tests/schools/first-for-schools'
     }
-    // we will set condition if schools ...
   ];
+  sidebarExamsGeneralHigher: {name: string, link: string}[] = [
+    {
+      name: 'General and higher education',
+      link: 'exams-tests/general-higher'
+    },
+    {
+      name: '- A2 Key',
+      link: 'exams-tests/general-higher/key'
+    },
+    {
+      name: '- B1 Preliminary',
+      link: 'exams-tests/general-higher/preliminary'
+    },
+    {
+      name: '- B2 First',
+      link: 'exams-tests/general-higher/first'
+    },
+    {
+      name: '- C1 Advanced',
+      link: 'exams-tests/general-higher/advanced'
+    }
+  ]
 
   sidebarPrepare: {name: string, link: string}[] = [
     {
       name: 'Free activities',
-      link: '/prepare/games'
+      link: 'https://www.cambridgeenglish.org/learning-english/activities-for-learners/'
     },
     {
       name: 'Exam preparatio',
-      link: '/prepare/games'
+      link: 'https://www.cambridgeenglish.org/learning-english/exam-preparation/'
     },
     {
       name: 'Test your English',
-      link: '/prepare/games'
+      link: 'https://www.cambridgeenglish.org/test-your-english/'
     },
     {
       name: 'Parents and children',
-      link: '/prepare/games'
+      link: '/prepare/parents-and-children'
     },
     {
       name: 'Games and social media',
@@ -80,7 +96,7 @@ export class NavigationService {
     },
     {
       name: 'More resources',
-      link: '/prepare/games'
+      link: 'https://www.cambridgeenglish.org/learning-english/free-resources/'
     }
   ];
 
@@ -98,4 +114,5 @@ export class NavigationService {
   ];
 
   constructor() { }
+
 }

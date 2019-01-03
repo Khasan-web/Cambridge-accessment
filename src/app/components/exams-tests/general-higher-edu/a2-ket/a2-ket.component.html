@@ -1,3 +1,948 @@
-<p>
-  a2-ket works!
-</p>
+<section id="level">
+  <div class="container mt-5">
+    <div class="row mb-2 title">
+      <div class="col-lg-6 col-md-12 col-12">
+        <h2 class="drop-content-item d-inline-block">A2 Key
+          <a class="mx-2" routerLink="/book-exam">
+            <button class="btn btn-v2 btn-sm">Book a test!</button>
+          </a>
+        </h2>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 text-right p-0 btn-links">
+        <a class="mx-1" id="commonInfo"><button class="btn btn-m2 btn-sm">Common info</button></a>
+        <a class="mx-1" id="testFormat"><button class="btn btn-m2 btn-sm">Exam format</button></a>
+        <a class="mx-1" id="preparationBtn"><button class="btn btn-m2 btn-sm">Preparation</button></a>
+        <a class="mx-1" id="resultBtn"><button class="btn btn-m2 btn-sm">Results</button></a>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="row mx-auto">
+      <div class="col-lg-3 col-cd-5 mx-auto sidebar-menu">
+        <h5 data-toggle="collapse" href="#sidebar" role="button" aria-expanded="false" aria-controls="sidebar">General
+          and higher levels<i class="fa fa-list pt-2"></i></h5>
+        <div class="sidebar collapse" id="sidebar">
+          <ul class="list-unstyled">
+            <li *ngFor="let sidebarItem of sidebarItems">
+              <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-12 subItem mt-4">
+
+        <section id="main-info" class="navigation-level">
+          <div class="row">
+            <div class="col-lg-1 col-md-1 col-2 title-icon p-0">
+              <i class="fa fa-key" aria-hidden="true"></i>
+            </div>
+            <div class="col-10">
+              <p>A2 Key, formerly known as Cambridge English: Key (KET), is one of our <a href="/exams-tests/qualifications">Cambridge
+                  English Qualifications</a>. This basic-level qualification is a great exam to take if you're new to
+                learning
+                English.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <p>An A2 Key qualification is proof of your ability to use English to communicate in simple situations.</p>
+              <p>The exam tests all four English language skills – reading, writing, listening and speaking.</p>
+              <p>It should give you the confidence to go on and study for higher-level exams such as <a routerLink="/exams-tests/general-higher/preliminary">B1
+                  Preliminary</a> and <a routerLink="/exams-tests/general-higher/first">B2 First</a>.</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 pl-4 mt-5">
+              <h4>Key facts</h4>
+              <div class="short-line btn-v2 my-3"></div>
+              <p><strong>CEFR level:</strong> A2 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
+              <p><strong>Scale score:</strong> 120–139 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
+              <p><strong>Test format:</strong> Computer or paper-based </p>
+              <p><strong>No. of papers:</strong> 3</p>
+              <p><strong>Test length:</strong> About 2 hours </p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <strong>
+                <p>An A2 Key certificate shows that you can:</p>
+              </strong>
+              <div class="short-line btn-v2 my-3"></div>
+              <ul class="mb-li">
+                <li><strong>understand and use basic phrases and expressions</strong></li>
+                <li><strong>understand simple written English</strong></li>
+                <li><strong>introduce yourself and answer basic questions about yourself</strong></li>
+                <li><strong>interact with English speakers at a basic level.</strong></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <strong>
+                <p>Reasons to choose A2 Key:</p>
+              </strong>
+              <div class="short-line btn-v2 my-3"></div>
+              <ul class="mb-li">
+                <li><strong>Gain a valuable qualification that is accepted worldwide.</strong></li>
+                <li><strong>Improve your work, study and travel prospects.</strong></li>
+                <li><strong>Show that you have the basic language skills you need to communicate in English.</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="quote-block">
+            <p class="quote">I started off with A2 Key and progressed through all of the exams, finishing with C2
+              Proficiency. When you learn a language it’s very important that it’s structured. The exams offer you a
+              step-by-step approach.</p>
+            <p class="mb-0">
+              <strong>Patrick Fryzlewicz </strong>
+            </p>
+            <p>Trainee doctor </p>
+          </div>
+
+        </section>
+
+        <section id="test-format" class="navigation-level">
+          <h2>Exam format</h2>
+          <p>A2 Key is made up of three papers developed to test your English skills. You can see exactly what is in
+            each paper below.</p>
+            <div class="table-responsive">
+              <table class="table my-5">
+                <thead class="btn-v2">
+                  <tr>
+                    <th scope="col">Paper</th>
+                    <th scope="col">Content</th>
+                    <th scope="col sm-table-mark">Marks (% of total)</th>
+                    <th scope="col">Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Reading and Writing </strong> <br> 1 hour 10 minutes <br>
+                      <a href="https://www.cambridgeenglish.org/Images/22103-key-sample-papers-1.zip" class="text-a zip">See
+                        sample paper</a>
+                    </td>
+                    <td>
+                      <strong>9</strong> parts / <strong>56</strong> questions
+                    </td>
+                    <td class="sm-table-mark">
+                      <strong>50%</strong>
+                    </td>
+                    <td>
+                      <p>Shows you can understand simple written information such as signs, brochures, newspapers and
+                        magazines.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Listening </strong> <br> 30 minutes, including 8 minutes' transfer time <br>
+                      <a href="https://www.cambridgeenglish.org/Images/22103-key-sample-papers-1.zip" class="text-a zip">See
+                        sample paper</a>
+                    </td>
+                    <td><strong>5</strong> parts / <strong>25</strong> questions </td>
+                    <td class="sm-table-mark">
+                      <strong>25%</strong>
+                    </td>
+                    <td>
+                      <p>Requires you to be able to understand announcements and other spoken material when people speak
+                        reasonably slowly.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Speaking </strong> <br> 8–10 minutes per pair of candidates <br>
+                      <a href="https://www.cambridgeenglish.org/Images/22103-key-sample-papers-1.zip" class="text-a zip">See
+                        sample paper</a>
+                    </td>
+                    <td><strong>2</strong> parts</td>
+                    <td class="sm-table-mark">
+                      <strong>25%</strong>
+                    </td>
+                    <td class="sm">
+                      <p>Shows you can take part in a conversation by answering and asking simple questions. Your Speaking
+                        test will be conducted face to face with one or two other candidates and two examiners. This makes
+                        your test more realistic and more reliable.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          <hr>
+
+          <div class="modules">
+            <div class="menu">
+              <div class="row">
+                <div id="read_write_btn" class="col-4 menu-item active-menu">
+                  <p>
+                    <i class="fa fa-book" aria-hidden="true"></i><span class="menu-title"> Reading and Writing</span>
+                  </p>
+                </div>
+                <div id="listening_btn" class="col-4 menu-item">
+                  <p>
+                    <i class="fa fa-music" aria-hidden="true"></i><span class="menu-title"> Listening</span>
+                  </p>
+                </div>
+                <div id="speaking_btn" class="col-4 menu-item">
+                  <p>
+                    <i class="fa fa-microphone" aria-hidden="true"></i><span class="menu-title"> Speaking</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-12 module" id="reading_writing">
+                  <h4><i class="fa fa-book" aria-hidden="true"></i> What’s in the Reading and Writing paper? <i class="fa fa-pencil"></i>
+                  </h4>
+                  <p>The A2 Key Reading and Writing paper has nine parts and different types of texts and questions.
+                    Parts 1–5 are about reading and Parts 6–9 are mainly about writing.</p>
+                  <p><strong>Summary</strong></p>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Time allowed:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>1 hour 10 minutes</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of parts:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>9</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of questions:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>56</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Marks:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>50% of total</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 1 (Matching)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 1?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Eight signs, notices or other very short texts (A–H) and five sentences. You have to match
+                        each sentence to the right sign or notice.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading for the main message.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 2 (Multiple choice)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 2?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Five sentences on the same topic or which are related to a story. Each sentence has a missing
+                        word and you have to choose the best word (A, B or C) to complete the sentence.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading and using vocabulary correctly.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 3 (Multiple choice)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 3?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>The first five questions are things you say in a conversation. For each sentence, you have to
+                        choose what the other person says next (A, B or C). The second part of Part 3 is a longer
+                        conversation, but some sentences are missing. You have a list of sentences (A–H) and you have
+                        to find the right sentence for each space.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading and finding the right answer for everyday conversations.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>10</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 4 (Right/Wrong/Doesn’t say OR multiple choice)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 4?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A long text or three short texts. You have to read the text(s) and seven sentences. You have
+                        to decide if each sentence is Right, Wrong, or Doesn't say, or choose the right answer (A, B or
+                        C) to the questions.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading to understand the detail and main ideas of a text.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>7</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 5 (Multiple choice)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Part 5 (Multiple-choice cloze)</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A short text with eight numbered spaces. Each space means there is a missing word and you have
+                        to choose the right answer (A, B or C).</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading to find the right sort of word, e.g. a preposition like 'for' or 'since', or verb form
+                        like 'keeping', 'keep' or 'kept', etc.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>8</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 6 (Word completion)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What’s in Part 6?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Five sentences like the definitions you find in a dictionary. We give you the first letter of
+                        the word and the number of letters, and you have to complete the word.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Vocabulary and spelling.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 7 (Open cloze)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What’s in Part 7?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A short text, for example a letter or postcard. There are 10 missing words in the text and you
+                        have to think of the right word to complete each space.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Grammar, vocabulary and spelling.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>10</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 8 (Information transfer)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 8?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One or two short texts to read. You have to use the information in the texts to fill in a
+                        note,
+                        form, diary, or other document correctly.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Reading and writing down words or numbers correctly.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 9 (Guided writing)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 9?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>You have to write a short message, note, email or postcard. The instructions tell you who to
+                        write to and what to say.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Writing short messages.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>1</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How much do I have to write?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>25–35 words</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>This question has a total of 5 marks.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 module" id="listening">
+                  <h4><i class="fa fa-music mr-2" aria-hidden="true"></i> What’s in the Listening paper?</h4>
+                  <p>The A2 Key Listening paper has five parts. For each part you have to listen to a recorded text or
+                    texts and answer some questions. You hear each recording twice.</p>
+                  <br>
+                  <h5>Summary</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Time allowed:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>About 30 minutes, including 8 minutes to copy your answers onto the answer sheet.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of parts:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of questions:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>25</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Marks:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>25% of total</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 1 (Multiple choice)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 1?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Five short conversations. For each conversation there is a question and three pictures (A, B
+                        or C). You have to listen to the conversations and choose the right answer.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening to find key information.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 2 (Matching)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 2?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A longer conversation and two lists of words. You have to listen to the conversation and match
+                        two lists of items, for example, people with the food they like to eat, or days of the week
+                        with activities.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening for key information.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 3 (Word formation)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 3?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A conversation and some questions. You have to listen to the conversation and choose the right
+                        answer (A, B or C) for each question.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening for information.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 4 (Gap-fill)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 4?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>A recording of a conversation between two people. You have to listen to the recording and
+                        write down the information you hear to complete a message or notes.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Listening and writing down information correctly.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many questions are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How many marks are there?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>One mark for each correct answer.</p>
+                    </div>
+
+                    <hr>
+
+                    <h5>Part 5 (Gap-fill)</h5>
+                    <div class="row mt-4">
+                      <div class="col-lg-4 col-md-4 col-12 info-title">
+                        <p>What's in Part 5?</p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-12">
+                        <p>A recording of one person speaking. You have to listen to the recording and write down the
+                          information you hear to complete a message or notes.</p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12 info-title">
+                        <p>What do I have to practise?</p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-12">
+                        <p>Listening and writing down information correctly.</p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12 info-title">
+                        <p>How many questions are there?</p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-12">
+                        <p>5</p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12 info-title">
+                        <p>How many marks are there?</p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-12">
+                        <p>One mark for each correct answer.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-12 module" id="speaking">
+                  <h4><i class="fa fa-microphone" aria-hidden="true"></i> What’s in the Speaking paper?</h4>
+                  <p>The A2 Key Speaking test has two parts and you take it with another candidate. There are two
+                    examiners. One examiner talks to you and the other examiner listens. Both examiners give marks
+                    for your performance.</p>
+                  <br>
+                  <h5>Summary</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Time allowed:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>8–10 minutes per pair of candidates</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Number of parts:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>2</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>Marks:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>25% of total</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>You have to talk:</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>with the examiner <br>
+                        with the other candidate</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 1 (Interview)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 1?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Conversation with the examiner. The examiner asks you some questions about yourself and you
+                        answer.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Giving information about yourself.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How long do we have to speak?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>5–6 minutes</p>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h5>Part 2 (Collaborative task)</h5>
+                  <div class="row mt-4">
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What's in Part 2?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>The examiner gives you some information or a card with some ideas for questions. You have to
+                        talk with the other candidate and ask or answer questions.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>What do I have to practise?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>Asking and answering simple questions about daily life.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 info-title">
+                      <p>How long do we have to speak?</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                      <p>3–4 minutes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="preparation" class="navigation-level">
+          <h2>Preparation</h2>
+          <p>Free: Paper-based sample test</p>
+          <a href="https://www.cambridgeenglish.org/Images/22103-key-sample-papers-1.zip" class="text-a zip">
+            Download sample papers for A2 Key
+          </a>
+
+          <hr>
+
+          <h2>Free: Computer-based sample tests</h2>
+          <p class="mt-3">You will need to use the Firefox browser to access these sample tests. You can
+            <a href="http://www.mozilla.org/en-US/">download Firefox for free here</a>.
+            Once downloaded, open Firefox and use the links below to view the tests.</p>
+          <p><a href="https://www.youtube.com/watch?v=KLt_f4hED1Q&feature=youtu.be">Watch this tutorial</a> before you
+            start to help you understand what you need to do. </p>
+          <p class="mt-5">
+            <strong>
+              Check your answers as you do the test. Once the test has finished you will not be able to check them.
+            </strong>
+          </p>
+          <a class="text-dark" href="http://cbpt.s3.amazonaws.com/cb-ket-readingwriting/index.html"><i class="fa fa-pencil"></i>
+            Reading and Writing sample test</a>
+          <br>
+          <a class="text-dark" href="http://cbpt.s3.amazonaws.com/cb-ket-listening/index.html"> <i class="fa fa-headphones"></i>
+            Listening sample test</a>
+          <p class="mt-5">
+            <strong>
+              Use the answer keys below:
+            </strong>
+          </p>
+          <a target="_blank" href="https://www.cambridgeenglish.org/Images/141305-ket-read-write-sample-key.pdf" class="text-a">Reading
+            and Writing answer key</a>
+          <br>
+          <a target="_blank" href="https://www.cambridgeenglish.org/Images/141304-ket-listening-sample-key.pdf" class="text-a">Listening
+            answer key</a>
+          <p class="mt-5">There is no answer key for Reading and Writing Part 9, but there are sample answers and
+            examiner comments in the <a href="https://www.cambridgeenglish.org/Images/168163-cambridge-english-key-handbook-for-teachers.pdf">relevant
+              pages of the A2 Key handbook</a></p>
+
+          <hr>
+
+          <h4>Free: English practice</h4>
+          <p>Practise your English with our free online activities. We have activities for reading, writing, listening,
+            grammar, pronunciation and vocabulary. </p>
+          <a target="_blank" href="https://www.cambridgeenglish.org/learning-english/activities-for-learners/?level=independent&rows=12"
+            class="text-dark"> <i class="fa fa-search"></i> Search for free English activities</a>
+
+          <hr>
+
+          <h4>Vocabulary list</h4>
+          <p>This list gives teachers a guide to the vocabulary needed when preparing students for A2 Key and A2 Key
+            for Schools.</p>
+          <a href="https://www.cambridgeenglish.org/Images/22105-ket-vocabulary-list.pdf" class="text-a">Download A2
+            Key vocabulary list</a>
+
+          <hr>
+
+          <h4>Information for candidates</h4>
+          <p>A guide to the exam, with advice on preparing for the exam, tips for exam day and useful links.</p>
+          <a href="https://www.cambridgeenglish.org/Images/22106-ket-information-for-candidates.pdf" class="text-a">Download
+            A2 Key information for candidates</a>
+
+          <hr>
+
+          <h4>Summary regulations for candidates</h4>
+          <p>All the important information you need to know when taking the exam.</p>
+          <a href="https://www.cambridgeenglish.org/Images/113247-summary-regulations-for-candidates.pdf" class="text-a">Download
+            Summary regulations for candidates</a>
+
+          <hr>
+
+          <h4>Frequently asked questions and exam day tips</h4>
+          <a href="https://www.cambridgeenglish.org/Images/248510-cambridge-english-key-faqs.pdf" class="text-a">
+            A2 Key FAQs</a><br>
+          <a href="https://www.cambridgeenglish.org/Images/25008-paper-based-exam-document.pdf" class="text-a">
+            Exam day tips – paper-based exams</a><br>
+          <a href="https://www.cambridgeenglish.org/Images/25009-computer-based-exam.pdf" class="text-a">
+            Exam day tips – computer-based exams</a>
+
+          <hr>
+
+          <h4>Support and information for parents</h4>
+          <p>Children can have fun learning English with our <a href="https://www.cambridgeenglish.org/learning-english/parents-and-children/activities-for-children/">free
+              games and activities</a>.</p>
+          <p>Find <a href="https://www.cambridgeenglish.org/learning-english/parents-and-children/">information and
+              tips</a> to help encourage your children to have fun learning English.</p>
+
+          <hr>
+
+          <h4>Official Cambridge English preparation materials</h4>
+          <p>You can find a wide range of official Cambridge English support materials from Cambridge Assessment
+            English and Cambridge University Press. Support materials include coursebooks and practice tests and
+            include materials in both print and digital formats.</p>
+          <div class="row preparation mt-5">
+
+            <div class="col-lg-10 col-md-10 prep-item mb-4 p-0" *ngFor="let material of materials">
+              <div class="row">
+                <div class="col-3 p-0">
+                  <div class="prep-img">
+                    <img src="{{material.img}}" alt="">
+                  </div>
+                  <a target="_blank" href="{{material.link}}">
+                    <button class="btn btn-dark btn-nbr buy-book w-100">{{material.action}}</button>
+                  </a>
+                </div>
+                <div class="col-9">
+                  <h5>{{material.name}}</h5>
+                  <p>{{material.info}}</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="results" class="navigation-level">
+          <h2>Results</h2>
+          <p>A2 Key results are reported on the <a href="/exams-tests#qualifications-table">Cambridge
+              English Scale</a>.</p>
+          <p>You will receive a separate score for each of the three papers (Reading and Writing, Listening, and
+            Speaking), giving you a clear understanding of your performance. These three scores are averaged to give
+            you an overall result for the exam. You will also be given a grade and Common European Framework of
+            Reference for Languages (CEFR) level. </p>
+          <a target="_blank" href="https://www.cambridgeenglish.org/Images/167506-cambridge-english-scale-factsheet.pdf"
+            class="text-a">For more information about the Cambridge English Scale, download our factsheet</a>
+
+          <hr>
+
+          <h2>When will I get my A2 Key Statement of Results?</h2>
+          <p>All candidates receive a <strong>Statement of Results</strong>, and if you are successful in the exam you will also receive a <strong>certificate</strong>.</p>
+          <p>Your Statement of Results is released online, approximately four to six weeks after the exam for
+            paper-based exams, and two to three weeks after the exam for computer-based exams. The fastest way to get
+            your results is to sign up to our <a href="https://candidates.cambridgeenglish.org/Members/Login.aspx?M=None">free
+              online results service</a>.</p>
+
+          <hr>
+
+          <h2>When will I get my A2 Key certificate?</h2>
+          <p>We send your certificate to our office Edu-Action <strong>about three weeks after results are available.
+              Our office Edu-Action</strong> then sends it on to you.</p>
+          <p>Your certificate will be sent to your centre seven to nine weeks after the date of your exam.</p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</section>

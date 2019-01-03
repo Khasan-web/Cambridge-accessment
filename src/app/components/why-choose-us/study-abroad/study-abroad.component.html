@@ -1,12 +1,13 @@
-<section id="study-abroad">
+<section id="study-abroad" class="why-we-section">
   <div class="container mt-5">
-    <h2 class="drop-content-item">Who accept our exams?</h2>
+    <h2 class="drop-content-item">Study abroad</h2>
     <div class="line"></div>
     <div class="row mx-auto">
-      <div class="col-lg-3 col-cd-5 mx-auto">
-        <div class="sidebar">
+      <div class="col-lg-3 col-cd-5 mx-auto sidebar-menu">
+        <h5 data-toggle="collapse" href="#sidebar" role="button" aria-expanded="false" aria-controls="sidebar">Why
+          Choose Us?<i class="fa fa-list pt-2 ml-1"></i></h5>
+        <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <h5>Why Choose Us?</h5>
             <li *ngFor="let sidebarItem of sidebarItems">
               <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>
@@ -100,21 +101,25 @@
         <p>Find out more about our exams for studying abroad:</p>
         <ul>
 
-          <div class="lvl">
-            <div class="level btn-m3">
-              <h4>B2</h4>
-            </div>
-            <p class="lvl-name d-inline ml-3">
-              Preliminary for Schools (PET)</p>
-          </div>
+          <a routerLink="/exams-tests/schools/preliminary-for-schools">
+              <div class="lvl">
+                  <div class="level btn-m3">
+                    <h4>B2</h4>
+                  </div>
+                  <p class="lvl-name d-inline ml-3">
+                    Preliminary for Schools (PET)</p>
+                </div>
+          </a>
 
-          <div class="lvl">
-            <div class="level btn-m3">
-              <h4>C2</h4>
-            </div>
-            <p class="lvl-name d-inline ml-3">
-                Advanced (CAE)</p>
-          </div>
+          <a routerLink="/exams-tests/general-higher/advanced">
+              <div class="lvl">
+                  <div class="level btn-m3">
+                    <h4>C1</h4>
+                  </div>
+                  <p class="lvl-name d-inline ml-3">
+                      Advanced (CAE)</p>
+                </div>
+          </a>
 
         </ul>
 

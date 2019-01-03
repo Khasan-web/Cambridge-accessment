@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-why-choose-us',
@@ -8,16 +10,26 @@ import { Component, OnInit } from '@angular/core';
 export class WhyChooseUsComponent implements OnInit {
   showVideo: boolean;
 
-  constructor() { }
+  constructor(public titleService: Title) {
+    this.titleService.setTitle('Why choose us | Cambridge Assessment English');
+  }
 
   ngOnInit() {
   }
 
   onShowVideo(){
-    this.showVideo = true;
+    $('.preview-overflow').fadeOut(function(){
+      $('video').fadeIn();
+      $('video').get(0).play()
+    });
     setTimeout(() => {
-      this.showVideo = false;
-    }, 90000)
+      var video = $('video')[0];
+      video.onended = function(e) {
+        $(video).fadeOut(function(){
+          $('.preview-overflow').fadeIn();
+        });
+      };
+    }, 1000);
   }
 
 }

@@ -1,9 +1,11 @@
 <section id="exams-tests">
-  <div class="overflow">
-    <img src="../../../assets/img/exams/exams-overflow.png" alt="" class="overflowImg img-fluid w-100">
-    <div class="content">
-      <h1 class="title">QUALIFICATIONS AND TESTS FOR EVERY LEARNER</h1>
-      <p>Find detailed information about your exam</p>
+  <div class="intro">
+    <div class="overflow">
+      <div class="content text-center">
+        <h1>Exams and tests</h1>
+        <p>We have qualifications for schools, general and higher education, and business.</p>
+      </div>
+      <img src="../../../assets/img/exams/exams_tests_img-01.png" class="img-fluid w-100 header_img" alt="">
     </div>
   </div>
 
@@ -11,11 +13,10 @@
     <div class="container">
       <h1>Your path to learning English, step by step</h1>
       <div class="col-lg-5 col-md-6 d-block mx-auto">
-        <img src="../../../assets/img/why-we/CEQ.png" alt="" class="w-100 my-5">
+        <img src="../../../assets/img/why-we/CEQ.png" alt="" class="w-75 my-5">
         <p>Cambridge English Qualifications are in-depth exams that make learning English enjoyable, effective and
           rewarding. Our unique approach encourages continuous progression with a clear path to improve language
           skills. We have qualifications for schools, general and higher education, and business.</p>
-        <button class="btn btn-or rounded mt-4">Learn more!</button>
       </div>
       <div class="row pt-5 parts">
         <div class="col-lg-4 col-md-5 mx-auto part-item">
@@ -23,23 +24,23 @@
           <p class="my-4">For us, learning English is more than just exams and grades. It’s about having the confidence
             to
             communicate and access a lifetime of enriching experiences and opportunities.....</p>
-          <button class="btn btn-v2 rounded">Learn more!</button>
+          <a routerLink="/exams-tests/schools"><button class="btn btn-v2 rounded">Learn more!</button></a>
         </div>
         <div class="col-lg-4 col-md-5 mx-auto part-item">
           <h4>General higher education</h4>
           <p class="my-4">Cambridge English Qualifications are in-depth exams that make learning English enjoyable,
             effective and rewarding.....</p>
-          <button class="btn btn-n2 rounded">Learn more!</button>
+          <a routerLink="/exams-tests/general-higher"><button class="btn btn-n2 rounded">Learn more!</button></a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="qualifications text-center">
-    <h2>Below you can see Cambridge English Qualification</h2>
+  <div class="qualifications text-center" id="qualifications-table">
+    <h2>Below you can see Cambridge English Qualifications</h2>
     <div class="container">
       <div class="col-lg-6 col-md-9 mx-auto mt-3">
-        <img class="w-100" src="../../../assets/img/exams/cut-table-01.jpg" alt="">
+        <img class="w-100" src="../../../assets/img/exams/cefr-diagram.png" alt="">
       </div>
       <h2 class="my-5">Find out more about any levels</h2>
       <div class="row levels">
@@ -48,81 +49,101 @@
 
           <h3 class="my-5 text-center">For Schools</h3>
 
-          <div class="lvl">
+          <a routerLink="/exams-tests/schools/first-for-schools">
+            <div class="lvl">
               <div class="level btn-m1">
                 <h4>B2</h4>
               </div>
               <p>First for Schools (FCE)</p>
-          </div>
+            </div>
+          </a>
 
-          <div class="lvl">
+          <a routerLink="/exams-tests/schools/preliminary-for-schools">
+            <div class="lvl">
               <div class="level btn-m3">
                 <h4>B1</h4>
               </div>
               <p>Preliminary for Schools (PET)</p>
-          </div>
+            </div>
+          </a>
 
-          <div class="lvl">
+          <a routerLink="/exams-tests/schools/key-for-schools">
+            <div class="lvl">
               <div class="level btn-v2">
                 <h4>A2</h4>
               </div>
               <p>Key for Schools (KET)</p>
-          </div>
+            </div>
+          </a>
 
-          <div class="lvl">
+          <a routerLink="/exams-tests/schools/flyers">
+            <div class="lvl">
               <div class="level btn-v1">
                 <h4>A2</h4>
               </div>
               <p>Flyers (YLE Flyers)</p>
-          </div>
+            </div>
+          </a>
 
-          <div class="lvl">
+          <a routerLink="/exams-tests/schools/movers">
+            <div class="lvl">
               <div class="level btn-n1">
                 <h4>A1</h4>
               </div>
               <p>Movers (YLE Movers)</p>
-          </div>
+            </div>
+          </a>
 
-          <div class="lvl pre-lvl">
+          <a routerLink="/exams-tests/schools/starters">
+            <div class="lvl pre-lvl">
               <div class="level btn-n2">
                 <h4><span class="pre">Pre</span> A1</h4>
               </div>
               <p>Starters (YLE Starters)</p>
-          </div>
+            </div>
+          </a>
 
         </div>
 
         <div class="col-lg-5 col-md-6 mx-auto">
-          
-            <h3 class="my-5 text-center">General and higher education</h3>
 
-            <div class="lvl">
-                <div class="level btn-m1">
-                  <h4>C1</h4>
-                </div>
-                <p>Advanced (CAE)</p>
-            </div>
+          <h3 class="my-5 text-center">General and higher education</h3>
 
+          <a routerLink="/exams-tests/general-higher/advanced">
             <div class="lvl">
-                <div class="level btn-v1">
-                  <h4>B2</h4>
-                </div>
-                <p>First (FCE)</p>
+              <div class="level btn-m1">
+                <h4>C1</h4>
+              </div>
+              <p>Advanced (CAE)</p>
             </div>
+          </a>
 
+          <a routerLink="/exams-tests/general-higher/first">
             <div class="lvl">
-                <div class="level btn-m2">
-                  <h4>B1</h4>
-                </div>
-                <p>Preliminary (PET)</p>
+              <div class="level btn-v1">
+                <h4>B2</h4>
+              </div>
+              <p>First (FCE)</p>
             </div>
+          </a>
 
+          <a routerLink="/exams-tests/general-higher/preliminary">
             <div class="lvl">
-                <div class="level btn-v2">
-                  <h4>A2</h4>
-                </div>
-                <p> Key (KET)</p>
+              <div class="level btn-m2">
+                <h4>B1</h4>
+              </div>
+              <p>Preliminary (PET)</p>
             </div>
+          </a>
+
+          <a routerLink="/exams-tests/general-higher/key">
+            <div class="lvl">
+              <div class="level btn-v2">
+                <h4>A2</h4>
+              </div>
+              <p> Key (KET)</p>
+            </div>
+          </a>
 
         </div>
 
