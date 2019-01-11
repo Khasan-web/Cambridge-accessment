@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    $('img').on('dragstart', function(event) { event.preventDefault(); });
   }
   
 

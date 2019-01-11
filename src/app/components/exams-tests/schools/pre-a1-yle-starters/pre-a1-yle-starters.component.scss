@@ -1,19 +1,14 @@
-$v1: #710193;
-$v2: #9846b7;
-$v3: #3b0056;
+$o1: rgb(240, 146, 70);
+$o2: rgb(228, 156, 97);
+$o3: rgb(228, 130, 51);
 
-$m1: #a10559;
-$m2: #bc2b7e;
-$m3: #770044;
-
-$n1: #0b1171;
-$n2: #313b9b;
-$n3: #060b38;
-
+$do1: rgb(216, 99, 57);
+$do2: rgb(214, 126, 94);
+$do3: rgb(218, 78, 28);
 
 #level{
     a{
-        color: $v2;
+        color: $o2;
         font-weight: 500;
         opacity: 0.7;
     }
@@ -21,13 +16,13 @@ $n3: #060b38;
         font-weight: 300;
     }
     .line{
-        background: $v2;
+        background: $o2;
     }
     .title-icon{
         text-align: center;
         i{
             font-size: 50px;
-            color: $v2;
+            color: $o2;
             opacity: 0.7;
         }
     }
@@ -91,7 +86,7 @@ $n3: #060b38;
         }
         .menu{
             .menu-item{
-                background: $v2;
+                background: $o2;
                 text-align: center;
                 border-right: 2px solid #e5e5e5;
                 line-height: 15px;
@@ -117,7 +112,7 @@ $n3: #060b38;
                 width: 40px;
                 height: 40px;
                 position: absolute;
-                background: $v2;
+                background: $o2;
                 left: 50%;
                 transform: translate(-50%, 0) rotate(45deg);
             }

@@ -1,20 +1,15 @@
-$v1: #710193;
-$v2: #9846b7;
-$v3: #3b0056;
+$o1: rgb(240, 146, 70);
+$o2: rgb(228, 156, 97);
+$o3: rgb(228, 130, 51);
 
-$m1: #a10559;
-$m2: #bc2b7e;
-$m3: #770044;
-
-$n1: #0b1171;
-$n2: #313b9b;
-$n3: #060b38;
-
+$do1: rgb(216, 99, 57);
+$do2: rgb(214, 126, 94);
+$do3: rgb(218, 78, 28);
 
 .sidebar{
     ul{
         li:hover{
-            border-left: 5px solid $n1;
+            border-left: 5px solid $do1;
         }
     }
 }
@@ -22,7 +17,7 @@ $n3: #060b38;
 
 #study-abroad{
     a{
-        color: $n2;
+        color: $do2;
         opacity: 0.7;
         font-weight: 500;
         text-decoration: none;
@@ -32,7 +27,7 @@ $n3: #060b38;
     }
     .line{
         height: 5px;
-        background: $n2;
+        background: $do2;
         border-radius: 5rem;
     }
     .accept-item{

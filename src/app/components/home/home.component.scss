@@ -1,14 +1,10 @@
-$v1: #710193;
-$v2: #9846b7;
-$v3: #3b0056;
+$o1: rgb(240, 146, 70);
+$o2: rgb(228, 156, 97);
+$o3: rgb(228, 130, 51);
 
-$m1: #a10559;
-$m2: #bc2b7e;
-$m3: #770044;
-
-$n1: #0b1171;
-$n2: #313b9b;
-$n3: #060b38;
+$do1: rgb(216, 99, 57);
+$do2: rgb(214, 126, 94);
+$do3: rgb(218, 78, 28);
 
 
 h3,
@@ -28,22 +24,20 @@ h2 {
     .line {
       border-radius: 0 !important;
       height: 5px;
+      background: $o1;
+      animation: line-color 5s infinite;
     }
+  }
 
-    .line:nth-child(1) {
-      background: $v1;
+  @keyframes line-color {
+    0% {
+      background: $o1;
     }
-
-    .line:nth-child(2) {
-      background: $m1;
+    50% {
+      background: $do1;
     }
-
-    .line:nth-child(3) {
-      background: #ccc;
-    }
-
-    .line:nth-child(4) {
-      background: $n1;
+    100% {
+      background: $o1;
     }
   }
 
@@ -72,19 +66,19 @@ h2 {
   }
 
   .u1 {
-    background: $v1;
+    background: $o1;
   }
 
   .u2 {
-    background: $m1;
+    background: $do1;
   }
 
   .u3 {
-    background: #ccc;
+    background: $o1;
   }
 
   .u4 {
-    background: $n1;
+    background: $do3;
   }
 
   .subject:hover {
@@ -111,17 +105,17 @@ h2 {
   }
 
   .img-1 {
-    border-top: 10px solid $v1;
+    border-top: 10px solid $o1;
     border-radius: 0 0 0 70px;
   }
 
   .img-2 {
-    border-top: 10px solid $n1;
+    border-top: 10px solid $do3;
     border-radius: 0 0 70px 0;
   }
 
   .img-3 {
-    border-top: 10px solid $m1;
+    border-top: 10px solid $do1;
     border-radius: 0 0 0 70px;
   }
 
@@ -161,7 +155,7 @@ h2 {
     right: 150px;
 
     .card {
-      background: $v1;
+      background: $o1;
       border-radius: 0 70px 70px 70px;
     }
   }
@@ -170,7 +164,7 @@ h2 {
     left: 250px;
 
     .card {
-      background: $n1;
+      background: $do3;
       border-radius: 70px 0 70px 70px;
     }
   }
@@ -179,7 +173,7 @@ h2 {
     right: 150px;
 
     .card {
-      background: $m1;
+      background: $do1;
       border-radius: 0 70px 70px 70px;
     }
   }
@@ -219,6 +213,7 @@ h2 {
 
     h1 {
       font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.53);
     }
 
     p {
@@ -230,6 +225,11 @@ h2 {
   img {
     position: relative;
     top: -25px;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -o-user-select: none;
   }
 
 }

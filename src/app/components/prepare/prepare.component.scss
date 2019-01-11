@@ -1,14 +1,11 @@
-$v1: #710193;
-$v2: #9846b7;
-$v3: #3b0056;
+$o1: rgb(240, 146, 70);
+$o2: rgb(228, 156, 97);
+$o3: rgb(228, 130, 51);
 
-$m1: #a10559;
-$m2: #bc2b7e;
-$m3: #770044;
+$do1: rgb(216, 99, 57);
+$do2: rgb(214, 126, 94);
+$do3: rgb(218, 78, 28);
 
-$n1: #0b1171;
-$n2: #313b9b;
-$n3: #060b38;
 
 #prepare{
     .intro{
@@ -83,7 +80,7 @@ $n3: #060b38;
         }
     }
     .line{
-        background: $v1;
+        background: $o1;
         width: 50px;
         display: block;
         margin: 0 auto;
@@ -98,7 +95,7 @@ $n3: #060b38;
         }
         a:hover{
             i{
-                color: $v1;
+                color: $o1;
             }
         }
         i{
@@ -107,7 +104,7 @@ $n3: #060b38;
             margin-right: 5px;
         }
         .prep-item{
-            margin: 15px 0;
+            padding: 15px 0;
         }
     }
 }

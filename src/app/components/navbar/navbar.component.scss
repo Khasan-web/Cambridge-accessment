@@ -1,14 +1,4 @@
-$violet_1: #710193;
-$violet_2: #9846b7;
-$violet_3: #3b0056;
-
-$magenta_1: #a10559;
-$magenta_2: #bc2b7e;
-$magenta_3: #770044;
-
-$navy_1: #0b1171;
-$navy_2: #313b9b;
-$navy_3: #0b1171;
+$o1: rgb(240, 146, 70);
 
 .navbar-toggler {
   border: 0;
@@ -23,6 +13,10 @@ $navy_3: #0b1171;
 
 .navbar-toggler:active {
   border: 0;
+}
+
+.nav-link {
+  opacity: 0.8!important;
 }
 
 .navbar-fixed {
@@ -51,7 +45,7 @@ $navy_3: #0b1171;
     }
 
     a {
-      color: #710193;
+      color: rgb(240, 146, 70);
     }
 
     i:hover {
@@ -91,7 +85,7 @@ $navy_3: #0b1171;
   nav {
     position: absolute;
     width: 100%;
-    background: $violet_1;
+    background: $o1;
     z-index: 10000;
 
     .nav-item {
@@ -99,6 +93,10 @@ $navy_3: #0b1171;
       padding: 0 10px;
       font-weight: 400;
       padding-left: 0.5rem !important;
+
+      .nav-link {
+        color: rgba(255, 255, 255, 0.8);
+      }
 
       i {
         font-size: 16px;
@@ -114,39 +112,34 @@ $navy_3: #0b1171;
   }
 
   .dropdown-menu {
-    background: #a04cb9;
+    background: rgb(240, 146, 70);
     opacity: 0.9;
     border: none;
 
     .dropdown-item {
       color: #fff;
       font-weight: 300;
-      transition: 0.2s;
-      opacity: 0.8;
-      padding-left: 30px;
+      transition: 0.1s;
+      opacity: 0.9;
+      padding-left: 15px;
       background: transparent;
+      padding-right: 30px;
     }
 
     .dropdown-item:hover {
       background: transparent;
-    }
-
-    .dropdown-item:hover::before {
-      content: "⚫";
-      position: absolute;
-      left: 0;
-      padding-left: 10px;
-      opacity: 0.6;
+      padding-left: 30px;
+      padding-right: 15px;
     }
   }
 
   .active {
     background: #fff;
-    a {
-      color: $violet_1;
+    .nav-link {
+      color: $o1!important;
     }
     .dropdown-toggler-icon i {
-      color: $violet_1;
+      color: $o1;
     }
   }
 
