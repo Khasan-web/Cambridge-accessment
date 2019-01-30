@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, OnInit } from '@angular/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -73,7 +74,7 @@ import { TermsConditionsComponent } from './components/terms-conditions/terms-co
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [NavigationService],
+  providers: [NavigationService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule{}
