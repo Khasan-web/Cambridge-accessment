@@ -8,7 +8,7 @@
           Choose Us?<i class="fa fa-list pt-2 ml-1"></i></h5>
         <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <li *ngFor="let sidebarItem of sidebarItems">
+            <li *ngFor="let sidebarItem of sidebarItems" routerLinkActive="active">
               <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>
           </ul>
@@ -19,7 +19,7 @@
         <div class="card mb-3">
           <div class="card-img-top">
             <div class="banner">
-              <a target="_blank" class="banner-link" href="http://englishatwork.cambridgeenglish.org/"><img src="../../../../assets/img/why-we/skills/English-at-Work-banner.png"
+              <a target="_blank" class="banner-link" href="http://englishatwork.cambridgeenglish.org/"><img src="../../../../assets/img/why-we/skills/work.png"
                   alt="" class="w-100"></a>
             </div>
           </div>

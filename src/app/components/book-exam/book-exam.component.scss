@@ -1,14 +1,4 @@
-$v1: #710193;
-$v2: #9846b7;
-$v3: #3b0056;
-
-$m1: #a10559;
-$m2: #bc2b7e;
-$m3: #770044;
-
-$n1: #0b1171;
-$n2: #313b9b;
-$n3: #060b38;
+$o1: rgb(240, 146, 70);
 
 h2 {
   font-weight: 300;
@@ -24,7 +14,7 @@ h2 {
 }
 
 .short-line {
-  background: $v1;
+  background: $o1;
   margin: 0 auto;
 }
 
@@ -70,7 +60,7 @@ h4 {
   }
 
   i {
-    color: $v1;
+    color: $o1;
     font-size: 40px;
     margin-bottom: 10px;
   }

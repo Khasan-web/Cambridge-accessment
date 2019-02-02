@@ -7,8 +7,8 @@
         <h5 data-toggle="collapse" href="#sidebar" role="button" aria-expanded="false" aria-controls="sidebar">Prepare<i class="fa fa-list pt-2 ml-1"></i></h5>
         <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <li *ngFor="let sidebarItem of sidebarItems">
-              <a href="{{sidebarItem.link}}">{{sidebarItem.name}}</a>
+            <li *ngFor="let sidebarItem of sidebarItems" routerLinkActive="active">
+              <a routerLink="{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>
           </ul>
         </div>

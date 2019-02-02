@@ -12,7 +12,6 @@
         <a class="mx-2" id="commonInfo"><button class="btn btn-m2 btn-sm">Common info</button></a>
         <a class="mx-2" id="testFormat"><button class="btn btn-m2 btn-sm">Test format</button></a>
         <a class="mx-2" id="preparationBtn"><button class="btn btn-m2 btn-sm">Preparation</button></a>
-        <a class="mx-2" id="testDates"><button class="btn btn-m2 btn-sm">Test dates</button></a>
         <a class="mx-2" id="resultBtn"><button class="btn btn-m2 btn-sm">Results</button></a>
       </div>
     </div>
@@ -23,7 +22,7 @@
           levels <i class="fa fa-list pt-2"></i></h5>
         <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <li *ngFor="let sidebarItem of sidebarItems">
+                        <li *ngFor="let sidebarItem of sidebarItems" routerLinkActive="active">
               <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>
           </ul>
@@ -37,7 +36,7 @@
               <i class="fa fa-pencil" aria-hidden="true"></i>
             </div>
             <div class="col-10">
-              <p>A2 Flyers, formerly known as Cambridge English: Flyers (YLE Flyers), is one of our <a href="/exams-tests/qualification">Cambridge
+              <p>A2 Flyers, formerly known as Cambridge English: Flyers (YLE Flyers), is one of our <a routerLink="/exams-tests/schools">Cambridge
                   English
                   Qualifications</a>. It is the third of our fun, activity-based English tessts for children.</p>
             </div>
@@ -47,7 +46,7 @@
 
           <div class="row">
             <div class="col-lg-6 col-md-6">
-              <p>A2 Flyers is the third of three <a href="/exams-tests/schools">Cambridge English Qualifications
+              <p>A2 Flyers is the third of three <a routerLink="/exams-tests/schools">Cambridge English Qualifications
                   designed for young learners</a>. These
                 tests introduce children to everyday written and spoken English and are an excellent way for them to
                 gain confidence and improve their English.
@@ -67,7 +66,7 @@
             <div class="col-lg-6 col-md-6 pl-4 mt-5">
               <h4>Key facts</h4>
               <div class="short-line btn-v2 my-3"></div>
-              <p><strong>CEFR level:</strong> A2 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
+              <p><strong>CEFR level:</strong> A2 <a target="_blank" routerLink="/exams-tests/cefr">What's this?</a></p>
               <p><strong>Test format:</strong> Paper-based</p>
               <p><strong>No. of papers:</strong> 3</p>
               <p><strong>Test length:</strong> About 1 hour 15 minutes</p>
@@ -772,12 +771,6 @@
           <h1>Video</h1>
         </section>
 
-        <section id="test-dates" class="navigation-level">
-          <h2>Test Dates</h2>
-          <p>Different centres may offer different dates depending on the local needs and conditions. To find out when children can take their A2 Flyers test, contact your centre.</p>
-          <p>Children take all their test papers within a period of five days. The Listening paper is always taken before the Reading and Writing paper.</p>
-        </section>
-
         <section id="results" class="navigation-level">
           <h2>Results</h2>
           <p>There is no pass or fail. <strong>All children receive an award</strong> which shows how many shields they
@@ -790,14 +783,16 @@
           </ul>
           <p>A result of one shield means a child can improve a lot in that skill. Five shields mean that a child did
             very well in that skill and answered most questions correctly.</p>
-          <p>Children should be ready to start preparing for the next Cambridge English exam – <a href="/exams-tests/schools/key-for-schools">A2 Key for Schools</a> and <a href="/exams-tests/schools/preliminary-for-schools">B1 Preliminary for Schools</a> – if they achieve a total of 10 or 11 shields, or above.</p>
+          <p>Children should be ready to start preparing for the next Cambridge English exam – <a routerLink="/exams-tests/schools/key-for-schools">A2 Key for Schools</a> and <a routerLink="/exams-tests/schools/preliminary-for-schools">B1 Preliminary for Schools</a> – if they achieve a total of 10 or 11 shields, or above.</p>
           <div class="col-lg-6 col-md-6">
             <img src="../../../../../assets/img/exams/schools/levels/starters-movers-flyers-certificate-fan.png" class="w-100"
               alt="">
           </div>
         </section>
-
       </div>
+    </div>
+    <div class="text-right">
+        <a routerLink="/book-exam" class="btn btn-v2 book-a-test">Book a test!</a>
     </div>
   </div>
 </section>

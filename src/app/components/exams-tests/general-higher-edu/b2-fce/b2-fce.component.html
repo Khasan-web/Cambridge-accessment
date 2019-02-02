@@ -22,7 +22,7 @@
             and higher levels<i class="fa fa-list pt-2"></i></h5>
           <div class="sidebar collapse" id="sidebar">
             <ul class="list-unstyled">
-              <li *ngFor="let sidebarItem of sidebarItems">
+                          <li *ngFor="let sidebarItem of sidebarItems" routerLinkActive="active">
                 <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
               </li>
             </ul>
@@ -36,7 +36,7 @@
                 <i class="fa fa-key" aria-hidden="true"></i>
               </div>
               <div class="col-10">
-                <p>B2 First, formerly known as Cambridge English: First (FCE), is one of our  <a href="/exams-tests/qualifications">Cambridge
+                <p>B2 First, formerly known as Cambridge English: First (FCE), is one of our  <a routerLink="/exams-tests/general-higher">Cambridge
                     English Qualifications</a>. It is our most popular exam, accepted by thousands of businesses and educational institutions worldwide.</p>
               </div>
             </div>
@@ -52,8 +52,8 @@
               <div class="col-lg-6 col-md-6 pl-4 mt-5">
                 <h4>Key facts</h4>
                 <div class="short-line btn-v2 my-3"></div>
-                <p><strong>CEFR level:</strong> B2 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
-                <p><strong>Scale score:</strong> 160–179 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
+                <p><strong>CEFR level:</strong> B2 <a target="_blank" routerLink="/exams-tests/cefr">What's this?</a></p>
+                <p><strong>Scale score:</strong> 160–179 <a target="_blank" routerLink="/exams-tests/cefr">What's this?</a></p>
                 <p><strong>Test format:</strong> Computer or paper-based </p>
                 <p><strong>No. of papers:</strong> 4</p>
                 <p><strong>Test length:</strong> About 3.5 hours </p>
@@ -943,7 +943,7 @@
   
           <section id="results" class="navigation-level">
             <h2>Results</h2>
-            <p>B2 First results are reported on the <a href="/exams-tests#qualifications-table">Cambridge
+            <p>B2 First results are reported on the <a routerLink="/exams-tests#qualifications-table">Cambridge
                 English Scale</a>.</p>
             <p>You will receive a separate score for each of the four skills (reading, writing, listening and speaking) and use of English, giving you a clear understanding of your performance. These five scores are averaged to give you an overall result for the exam. You will also be given a grade and <a target="_blank" routerLink="/exams-tests/cefr">Common European Framework of Reference for Languages</a> (CEFR) level.</p>
             <a target="_blank" href="https://www.cambridgeenglish.org/Images/167506-cambridge-english-scale-factsheet.pdf"
@@ -966,8 +966,10 @@
                 Our office Edu-Action</strong> then sends it on to you.</p>
             <p>Your certificate will be sent to your centre seven to nine weeks after the date of your exam.</p>
           </section>
-  
         </div>
+      </div>
+      <div class="text-right">
+          <a routerLink="/book-exam" class="btn btn-v2 book-a-test">Book a test!</a>
       </div>
     </div>
   </section>

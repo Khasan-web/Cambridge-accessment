@@ -18,10 +18,8 @@ export class A2KetComponent implements OnInit {
     private jquery: JqueryLvlsService, 
     private prep_materials: PreparationMaterialLevelsService,
     public titleService: Title) { 
-
-    this.sidebarItems = sidebar.sidebarExamsSchool;
+    this.sidebarItems = sidebar.sidebarExamsGeneralHigher;
     this.materials = prep_materials.material_a2;
-    console.log(this.materials);
     this.titleService.setTitle('A2 Key | Cambridge Assessment English');
   }
 

@@ -8,31 +8,12 @@ $do3: rgb(218, 78, 28);
 
 
 #prepare{
-    .intro{
-        position: relative;
-        height: 600px;
-        .header_img{
-            position: absolute;
-            top: -40px;
-            z-index: -2;
-        }
-        .content{
-            position: absolute;
-            color: #fff;
-            z-index: 9998;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 100%;
-            h1{
-                font-weight: 700;
-            }
-        }
+    .slider {
+        background-image: url('../../../assets/img/preparing/prep.jpg');
     }
 
     .prepare-intro{
-        margin-top: 30px;
+        margin-top: 100px;
     }
 
     a{
@@ -124,19 +105,6 @@ $do3: rgb(218, 78, 28);
             }
         }
     }
-    .intro{
-        p{
-            width: 400px;
-            margin: 0 auto;
-            margin-top: 15px;
-        }
-    }
-}
-
-@media(min-width: 2000px){
-    .intro{
-        height: 730px!important;
-    }
 }
 
 @media(max-width: 1200px){
@@ -156,9 +124,6 @@ $do3: rgb(218, 78, 28);
 }
 
 @media(max-width: 998px){
-    .intro{
-        height: 400px!important;
-    }
     .other-sources{
         text-align: left!important;
     }
@@ -172,18 +137,9 @@ $do3: rgb(218, 78, 28);
             display: none;
         }
     }
-
-    .intro {
-        height: 250px!important;
-    }
-
 }
 
 @media(max-width: 768px) {
-    .intro {
-        height: 330px !important;
-    }
-    
     .header_img {
         top: 42px!important;
     }

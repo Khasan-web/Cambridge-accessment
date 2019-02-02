@@ -4,15 +4,16 @@ import * as $ from 'jquery';
 @Injectable({
   providedIn: 'root'
 })
-export class JqueryLvlsService implements OnInit{
-
-  constructor() { }
+export class JqueryLvlsService implements OnInit {
 
   ngOnInit(){
-    
-      $('.drop-content-item a').hide(0);
 
-    $(document).ready(function(){
+    $('a').click(function() {
+      window.scrollTo(0, 0);
+    });
+
+    $(document).ready(function() {
+
       $('#commonInfo').click(function(){
         $('.navigation-level').slideUp(200);
         $('#main-info').slideDown(200);
@@ -61,6 +62,8 @@ export class JqueryLvlsService implements OnInit{
       if (window.innerWidth < 768){
         $('.prep-item button').html('Buy');
       }
+  
     });
   }
+
 }

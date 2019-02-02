@@ -22,7 +22,7 @@
           levels <i class="fa fa-list pt-2"></i></h5>
         <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <li *ngFor="let sidebarItem of sidebarItems">
+                        <li *ngFor="let sidebarItem of sidebarItems" routerLinkActive="active">
               <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>
           </ul>
@@ -37,7 +37,7 @@
             </div>
             <div class="col-10">
               <p>B1 Preliminary for Schools, formerly known as Cambridge English: Preliminary for Schools (PET for
-                Schools), is one of our <a href="/exams-tests/qualifications">Cambridge
+                Schools), is one of our <a routerLink="/exams-tests/schools">Cambridge
                   English Qualifications</a>. It is the English language exam that shows
                 that students have mastered the basics.</p>
             </div>
@@ -49,19 +49,19 @@
             <div class="col-lg-6 col-md-6">
               <p>A B1 Preliminary for Schools qualification shows that a student has mastered the basics of English and
                 now has practical language skills for everyday use.</p>
-              <p>This exam is the logical step in a student’s language learning journey between <a href="/exams-tests/schools/key-for-schools">A2
+              <p>This exam is the logical step in a student’s language learning journey between <a routerLink="/exams-tests/schools/key-for-schools">A2
                   Key for Schools</a> and
-                <a href="/exams-tests/schools/first-for-schools">B2 First for Schools</a>.</p>
-              <p>B1 Preliminary for Schools is targeted at the same <a href="/exams-tests/cefr">CEFR level</a> as <a
-                  href="/exams-tests/schools/preliminary-for-schools">B1 Preliminary</a> but with content aimed
+                <a routerLink="/exams-tests/schools/first-for-schools">B2 First for Schools</a>.</p>
+              <p>B1 Preliminary for Schools is targeted at the same <a routerLink="/exams-tests/cefr">CEFR level</a> as <a
+                  routerLink="/exams-tests/schools/preliminary-for-schools">B1 Preliminary</a> but with content aimed
                 at school-age learners rather than adults</p>
             </div>
 
             <div class="col-lg-6 col-md-6 pl-4 mt-5">
               <h4>Key facts</h4>
               <div class="short-line btn-v2 my-3"></div>
-              <p><strong>CEFR level:</strong> B1 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
-              <p><strong>Scale score:</strong> 140–159 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
+              <p><strong>CEFR level:</strong> B1 <a target="_blank" routerLink="/exams-tests/cefr">What's this?</a></p>
+              <p><strong>Scale score:</strong> 140–159 <a target="_blank" routerLink="/exams-tests/cefr">What's this?</a></p>
               <p><strong>Test format:</strong> Computer or paper-based </p>
               <p><strong>No. of papers:</strong> 3</p>
               <p><strong>Test length:</strong> About 2 hours 20 minutes</p>
@@ -912,7 +912,7 @@
 
         <section id="results" class="navigation-level">
           <h2>Results</h2>
-          <p>B1 Preliminary for Schools results are reported on the <a href="/exams-tests#qualifications-table">Cambridge
+          <p>B1 Preliminary for Schools results are reported on the <a routerLink="/exams-tests#qualifications-table">Cambridge
               English Scale</a>.</p>
           <p>You will receive a separate score for each of the four skills (reading, writing, listening and speaking),
             giving you a clear understanding of your performance. These four scores are averaged to give you an overall
@@ -937,8 +937,10 @@
           <p>We send your certificate to our office Edu-Action <strong>about three weeks after results are available. Our office Edu-Action</strong> then sends it on to you.</p>
           <p>Your certificate will be sent to your centre seven to nine weeks after the date of your exam.</p>
         </section>
-
       </div>
+    </div>
+    <div class="text-right">
+        <a routerLink="/book-exam" class="btn btn-v2 book-a-test">Book a test!</a>
     </div>
   </div>
 </section>

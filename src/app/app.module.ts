@@ -33,7 +33,6 @@ import { InformationForParentsComponent } from './components/prepare/parents-chi
 import { CefrComponent } from './components/exams-tests/cefr/cefr.component';
 import { FindUsComponent } from './components/find-us/find-us.component';
 import { BookExamComponent } from './components/book-exam/book-exam.component';
-import { CambridgeEngScaleComponent } from './components/cambridge-eng-scale/cambridge-eng-scale.component';
 import { TermsConditionsComponent } from './components/terms-conditions/terms-conditions.component';
 
 @NgModule({
@@ -67,7 +66,6 @@ import { TermsConditionsComponent } from './components/terms-conditions/terms-co
     CefrComponent,
     FindUsComponent,
     BookExamComponent,
-    CambridgeEngScaleComponent,
     TermsConditionsComponent
   ],
   imports: [

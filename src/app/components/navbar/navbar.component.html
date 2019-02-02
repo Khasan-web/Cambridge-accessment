@@ -10,11 +10,11 @@
           <a routerLink="/"><img src="../../../assets/img/logo.png" width="100%"></a>
         </div>
         <div class="col-lg-3 col-md-6 col-6 mx-auto socials text-center p-0">
-          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://www.facebook.com/CambridgeEnglish"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://twitter.com/CambridgeEng"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://www.instagram.com/cambridgeenglish/"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/cambridge-assessment-english"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://www.youtube.com/user/cambridgeenglishtv"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
         </div>
         <div class="col-lg-2 col-md-6 col-6 p-0 mx-auto p-0">
           <div class="langs d-inline">
@@ -23,20 +23,29 @@
             <img class="lang-item" src="../../../assets/img/uz.png" alt="">
           </div>
         </div>
-        <!-- <div class="book-exam col-lg-2 col-md-8 mx-auto p-0">
-          <a routerLink="/book-exam"><button class="btn btn-v1" style="border-radius: 5rem;">Book a test!</button></a>
-        </div> -->
+        <div class="book-exam col-lg-2 col-md-8 mx-auto p-0">
+          <a routerLink="/book-exam" class="btn btn-v1 book-a-test">Book a test!</a>
+        </div>
         <div class="col-lg-1 col-0 mx-auto"></div>
       </div>
     </div>
   </div>
   <div class="second-section">
     <nav class="navbar navbar-expand-lg navbar-dark p-0">
-
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </button>
+      <span class="show-on-mob">
+        <div class="social-nets-mob mr-3">
+          <a target="_blank" href="https://www.facebook.com/CambridgeEnglish"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://twitter.com/CambridgeEng"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://www.instagram.com/cambridgeenglish/"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/company/cambridge-assessment-english"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a target="_blank" href="https://www.youtube.com/user/cambridgeenglishtv"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+        </div>
+        <a routerLink="/book-exam"><button class="btn btn-sm text-v1 mr-2" style="border-radius: 5rem; background: #fff">Book a test!</button></a>
+      </span>
       <div class="collapse navbar-collapse" id="navbarNavDropdown" >
         <ul class="navbar-nav mx-auto">
           <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">

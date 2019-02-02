@@ -22,7 +22,7 @@
           and higher levels<i class="fa fa-list pt-2"></i></h5>
         <div class="sidebar collapse" id="sidebar">
           <ul class="list-unstyled">
-            <li *ngFor="let sidebarItem of sidebarItems">
+              <li *ngFor="let sidebarItem of sidebarItems" routerLinkActive="active">
               <a routerLink="/{{sidebarItem.link}}">{{sidebarItem.name}}</a>
             </li>
           </ul>
@@ -36,7 +36,7 @@
               <i class="fa fa-key" aria-hidden="true"></i>
             </div>
             <div class="col-10">
-              <p>A2 Key, formerly known as Cambridge English: Key (KET), is one of our <a href="/exams-tests/qualifications">Cambridge
+              <p>A2 Key, formerly known as Cambridge English: Key (KET), is one of our <a routerLink="/exams-tests/general-higher">Cambridge
                   English Qualifications</a>. This basic-level qualification is a great exam to take if you're new to
                 learning
                 English.</p>
@@ -56,8 +56,8 @@
             <div class="col-lg-6 col-md-6 pl-4 mt-5">
               <h4>Key facts</h4>
               <div class="short-line btn-v2 my-3"></div>
-              <p><strong>CEFR level:</strong> A2 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
-              <p><strong>Scale score:</strong> 120–139 <a target="_blank" href="/exams-tests/cefr">What's this?</a></p>
+              <p><strong>CEFR level:</strong> A2 <a target="_blank" routerLink="/exams-tests/cefr">What's this?</a></p>
+              <p><strong>Scale score:</strong> 120–139 <a target="_blank" routerLink="/exams-tests/cefr">What's this?</a></p>
               <p><strong>Test format:</strong> Computer or paper-based </p>
               <p><strong>No. of papers:</strong> 3</p>
               <p><strong>Test length:</strong> About 2 hours </p>
@@ -916,7 +916,7 @@
 
         <section id="results" class="navigation-level">
           <h2>Results</h2>
-          <p>A2 Key results are reported on the <a href="/exams-tests#qualifications-table">Cambridge
+          <p>A2 Key results are reported on the <a routerLink="/exams-tests#qualifications-table">Cambridge
               English Scale</a>.</p>
           <p>You will receive a separate score for each of the three papers (Reading and Writing, Listening, and
             Speaking), giving you a clear understanding of your performance. These three scores are averaged to give
@@ -941,8 +941,10 @@
               Our office Edu-Action</strong> then sends it on to you.</p>
           <p>Your certificate will be sent to your centre seven to nine weeks after the date of your exam.</p>
         </section>
-
       </div>
+    </div>
+    <div class="text-right">
+        <a routerLink="/book-exam" class="btn btn-v2 book-a-test">Book a test!</a>
     </div>
   </div>
 </section>

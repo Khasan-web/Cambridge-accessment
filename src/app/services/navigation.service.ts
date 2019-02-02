@@ -3,7 +3,7 @@ import { Injectable, OnInit } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class NavigationService{
+export class NavigationService {
 
   sidebarWhyWe: {name: string, link: string}[] = [
     {
@@ -21,10 +21,6 @@ export class NavigationService{
   ];
 
   sidebarExamsSchool: {name: string, link: string}[] = [
-    {
-      name: 'Schools',
-      link: 'exams-tests/schools'
-    },
     {
       name: '- Pre A1 Starters',
       link: 'exams-tests/schools/starters'
@@ -51,10 +47,6 @@ export class NavigationService{
     }
   ];
   sidebarExamsGeneralHigher: {name: string, link: string}[] = [
-    {
-      name: 'General and higher education',
-      link: 'exams-tests/general-higher'
-    },
     {
       name: '- A2 Key',
       link: 'exams-tests/general-higher/key'
@@ -112,7 +104,5 @@ export class NavigationService{
       link: '#newsletter'
     }
   ];
-
-  constructor() { }
 
 }

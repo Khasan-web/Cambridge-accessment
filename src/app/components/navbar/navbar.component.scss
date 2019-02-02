@@ -5,6 +5,7 @@ $o1: rgb(240, 146, 70);
   margin: 5px;
   border-radius: 0;
   outline: none;
+  color: #fff;
 
   .fa-bars {
     font-size: 25px;
@@ -27,7 +28,8 @@ $o1: rgb(240, 146, 70);
 
 .first-section {
   position: relative;
-  z-index: 9999;
+  z-index: 10020;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
   background: #fff;
   line-height: 60px;
 
@@ -40,7 +42,7 @@ $o1: rgb(240, 146, 70);
     i {
       font-size: 35px;
       margin: 0 3px;
-      opacity: 0.5;
+      opacity: 0.7;
       vertical-align: middle;
     }
 
@@ -49,7 +51,7 @@ $o1: rgb(240, 146, 70);
     }
 
     i:hover {
-      opacity: 0.7;
+      opacity: 0.9;
     }
   }
 
@@ -199,6 +201,15 @@ $o1: rgb(240, 146, 70);
   display: none;
   top: 60px;
   background: transparent;
+}
+
+.social-nets-mob {
+  a {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 5px;
+  }
+  
 }
 
 @media(min-width: 998px) {
